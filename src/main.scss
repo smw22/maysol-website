@@ -1,0 +1,398 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+$theme-colors:(
+    "info": #42d1d1,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.sticky{
+    height: 120px;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    .logo{
+        padding: 10px;
+    }
+    .logo-header{
+        height: 100px;
+    }
+    nav ul{
+        display: flex;
+        list-style-type: none;
+        padding: 50px 0 ;
+        gap: 40px;
+    }
+    .nav-element{
+        color:rgb(0, 0, 0);
+    }
+    .nav-links{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        position: relative;
+        transition: all 0.3s;
+    }
+
+    .nav-links-last-child{
+        font-size: 12px;
+    }
+
+    .nav-links:hover,
+    .nav-links:focus{
+        color: rgb(107, 107, 107);
+    }
+
+    .nav-links::after{
+        content: "";
+        height: 3px;
+        width: 100%;
+        background-color: rgb(66, 219, 219);
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+        opacity:0;
+        transition: all 0.25s;
+        pointer-events: none;
+    }
+
+    .nav-links:hover::after,
+    .nav-links:focus::after{
+        opacity:1;
+    }
+}
+
+.carousel-fade{
+    width: 100%;
+}
+.carousel-item-homepage{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 85vh;
+    min-height: 85vh;
+    width: 100%;
+    .carousel-caption{
+        bottom: 40%;
+    }
+    .carousel-homepage-property-title{
+        font-size: 60px;
+        padding-bottom: 10px;
+    }
+}
+
+.around-carousel-icon-square{
+    background-color: rgba(0,0,0,0.4);
+    width:  75px;
+    height: 75px;
+    bottom: 5px;
+    padding-top: 20px;
+    border-radius: 4px;
+}
+
+.welcome-menu-homepage{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 75px auto;
+    width: 1250px;
+    justify-content: center;
+    align-items: center;
+    .welcome-text-homepage{
+        width: 100%;
+        height: fit-content;
+        z-index: 2;
+        padding: 0 25px 10px 25px;
+        border-radius: 25px;
+        box-shadow: 1px 1px 5px #000000;
+        background-color: white;
+        grid-column: 1 / 3;
+        .welcome-text-homepage-title{
+            text-align: center;
+            padding: 15px 15px 10px 15px;
+            font-family: 'Roboto Slab', serif !important;
+        }
+    }
+    .welcome-image-homepage{
+        width: 100%;
+        z-index: 1;
+        border-radius: 25px;
+        grid-column: 2 / -1;
+        .welcome-image-homepage-image{
+            width: 100%;
+            border-radius: 25px;
+        }
+    }
+
+    .welcome-text-homepage, .welcome-image-homepage{
+        grid-row: 1 / 2;
+    }
+}
+
+// .welcome-menu-homepage{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 50px;
+//     margin-top: 400px;
+//     margin-bottom: 75px;
+//     .welcome-text-homepage{
+//         width: 440px;
+//         position: absolute;
+//         height: fit-content;
+//         z-index: 2;
+//         padding: 0 20px;
+//         border-radius: 25px;
+//         box-shadow: 1px 1px 5px #42d1d1;
+//         background-color: white;
+//         margin-right: 700px;
+//         .welcome-text-homepage-title{
+//             text-align: center;
+//             padding-bottom: 20px;
+//         }
+//     }
+//     .welcome-image-homepage{
+//         position: absolute;
+//         width: 50%;
+//         height: 600px;
+//         z-index: 1;
+//         background-color: aqua;
+//         margin-left: 400px;
+//     }
+// } z-index para poner un div encima del otro (otra opción) (pero hay que usar position:absolute y es mucho más sencillo con grid cuando tienes elementos encima y abajo que no quieres sobreescribir)
+
+.properties-menu-title{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 16%;
+    .properties-menu-title-homepage{
+        justify-content: center;
+        font-family: 'Roboto Slab', serif !important;
+    }
+    .properties-menu-title-homepage-line{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 2px;
+        background-color: #000000;
+        margin-bottom: 50px;
+    }
+}
+
+.properties-menu{
+    margin-bottom: 100px;
+}
+.properties-menu-images{
+    display: flex;
+    gap: 50px;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    .property{
+        width: 525px;
+        height: 490px;
+        background-color: rgb(240, 240, 239);
+        transition: 0.5s;
+        .properties-menu-first-property-image, .properties-menu-second-property-image{
+            height: 375px;
+            width: 525px;
+        }
+        .properties-menu-first-property-text, .properties-menu-second-property-text{
+            padding: 20px;
+        }
+        .properties-menu-names-homepage{
+            font-family: 'Roboto Slab', serif !important;
+        }
+    }
+    .property:hover{
+        background-color: #42d1d1;
+    }
+    .property-links{
+        color: #000;
+        text-decoration: none;
+    }
+    
+}
+
+.footer-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: rgb(240, 240, 239);
+    padding: 50px 50px 20px 50px;
+    .footer-info-logo-image{
+        height: 100px;
+    }
+    .footer-title{
+        border-bottom: 1px solid #000000;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+    .footer-links{
+        color: #000;
+        text-decoration: none;
+    }
+    .footer-links:hover{
+        color: #42d1d1;
+        text-decoration: none;
+    }
+    .footer-text{
+        line-height: 28px;
+    }
+}
+
+//Pagina principal
+
+//Pagina de Caja Blanca
+
+.caja-blanca-menu-title{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 20%;
+    margin-top: 150px;
+    .caja-blanca-menu-title-homepage{
+        justify-content: center;
+        font-family: 'Roboto Slab', serif !important;
+    }
+    .caja-blanca-menu-title-homepage-line{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 2px;
+        background-color: #000000;
+        margin-bottom: 50px;
+    }
+}
+
+.carousel-autoplay{
+    width: 100%;
+}
+
+.welcome-menu-properties-page{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 75px auto;
+    width: 1250px;
+    justify-content: center;
+    .welcome-text-properties-page{
+        width: 100%;
+        height: fit-content;
+        z-index: 2;
+        padding: 0 25px 10px 25px;
+        box-shadow: 1px 1px 5px #000000;
+        background-color: white;
+        grid-column: 1 / 3;
+        .welcome-text-properties-page-title{
+            text-align: center;
+            padding: 15px 15px 10px 15px;
+            font-family: 'Roboto Slab', serif !important;
+        }
+    }
+
+    .welcome-image-properties-page{
+        width: 100%;
+        z-index: 1;
+        border-radius: 25px;
+        grid-column: 2 / -1;
+        margin-top: 75px;
+        .welcome-image-properties-page-image{
+            width: 100%;
+            border-radius: 25px;
+        }
+    }
+    .welcome-text-properties-page, .welcome-image-properties-page{
+        grid-row: 1 / 2;
+    }
+}
+
+
+.services-menu-properties-page{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 75px auto;
+    width: 1250px;
+    justify-content: center;
+    .services-text-properties-page{
+        width: 100%;
+        height: fit-content;
+        z-index: 2;
+        padding: 0 25px 10px 25px;
+        box-shadow: 1px 1px 5px #000000;
+        background-color: white;
+        grid-column: 4 / end;
+        .services-text-properties-page-title{
+            text-align: center;
+            padding: 15px 15px 10px 15px;
+            font-family: 'Roboto Slab', serif !important;
+        }
+    }
+    .services-image-properties-page{
+        width: 100%;
+        z-index: 1;
+        border-radius: 25px;
+        grid-column: 5 / 1;
+        margin-top: 75px;
+        .services-image-properties-page-image{
+            width: 100%;
+        }
+    }
+
+    .services-text-properties-page, .services-image-properties-page{
+        grid-row: 1 / 2;
+    }
+}
+
+.caja-blanca-amenities-title{
+    margin-left: 18%;
+    width: 16%;
+    margin-top: 150px;
+    .caja-blanca-amenities-title-properties-page{
+        font-family: 'Roboto Slab', serif !important;
+    }
+    .caja-blanca-amenities-title-properties-page-line{
+        align-items: center;
+        width: 100%;
+        height: 2px;
+        background-color: #000000;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+
+
+@media all and (max-width: 1700px) {
+    .sticky{
+        gap: 100px;
+    }
+
+    .welcome-menu-homepage{
+        width: 1000px;
+    }
+
+    .properties-menu-images{
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 1250px) {
+    .carousel-fade{
+        margin-top: 120px;
+    }
+    .footer-info{
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+}
