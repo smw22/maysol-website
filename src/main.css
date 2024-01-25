@@ -11621,19 +11621,41 @@ textarea.form-control-lg {
 }
 
 .caja-blanca-amenities-title {
-  margin-left: 18%;
-  width: 16%;
+  width: 250px;
+  margin-left: 10%;
   margin-top: 150px;
 }
 .caja-blanca-amenities-title .caja-blanca-amenities-title-properties-page {
   font-family: "Roboto Slab", serif !important;
 }
-.caja-blanca-amenities-title .caja-blanca-amenities-title-properties-page-line {
-  align-items: center;
-  width: 100%;
+
+.caja-blanca-amenities-title-properties-page-line {
+  margin-left: 10%;
+  width: 250px;
   height: 2px;
   background-color: #000000;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+}
+
+.amenities-elements {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+}
+.amenities-elements .amenities-item {
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  font-family: "Roboto Slab", serif !important;
+  font-weight: bold;
+}
+.amenities-elements .first-row-amenities-elements, .amenities-elements .second-row-amenities-elements, .amenities-elements .third-row-amenities-elements, .amenities-elements .fourth-row-amenities-elements {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 @media all and (max-width: 1700px) {
