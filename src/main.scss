@@ -100,7 +100,7 @@ $theme-colors:(
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin: 75px auto;
-    width: 1250px;
+    width: 60%;
     justify-content: center;
     align-items: center;
     .welcome-text-homepage{
@@ -269,19 +269,16 @@ $theme-colors:(
         width: 100%;
         height: 2px;
         background-color: #000000;
-        margin-bottom: 50px;
+        margin-bottom: 35px;
     }
 }
 
-.carousel-autoplay{
-    width: 100%;
-}
 
 .welcome-menu-properties-page{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin: 75px auto;
-    width: 1250px;
+    margin: 15px auto;
+    width: 60%;
     justify-content: center;
     .welcome-text-properties-page{
         width: 100%;
@@ -303,7 +300,7 @@ $theme-colors:(
         z-index: 1;
         border-radius: 25px;
         grid-column: 2 / -1;
-        margin-top: 75px;
+        margin-top: 50px;
         .welcome-image-properties-page-image{
             width: 100%;
             border-radius: 25px;
@@ -315,46 +312,46 @@ $theme-colors:(
 }
 
 
-.services-menu-properties-page{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 75px auto;
-    width: 1250px;
-    justify-content: center;
-    .services-text-properties-page{
-        width: 100%;
-        height: fit-content;
-        z-index: 2;
-        padding: 0 25px 10px 25px;
-        box-shadow: 1px 1px 5px #000000;
-        background-color: white;
-        grid-column: 4 / end;
-        .services-text-properties-page-title{
-            text-align: center;
-            padding: 15px 15px 10px 15px;
-            font-family: 'Roboto Slab', serif !important;
-        }
-    }
-    .services-image-properties-page{
-        width: 100%;
-        z-index: 1;
-        border-radius: 25px;
-        grid-column: 5 / 1;
-        margin-top: 75px;
-        .services-image-properties-page-image{
-            width: 100%;
-        }
-    }
+// .services-menu-properties-page{
+//     display: grid;
+//     grid-template-columns: repeat(5, 1fr);
+//     margin: 75px auto;
+//     width: 1250px;
+//     justify-content: center;
+//     .services-text-properties-page{
+//         width: 100%;
+//         height: fit-content;
+//         z-index: 2;
+//         padding: 0 25px 10px 25px;
+//         box-shadow: 1px 1px 5px #000000;
+//         background-color: white;
+//         grid-column: 4 / end;
+//         .services-text-properties-page-title{
+//             text-align: center;
+//             padding: 15px 15px 10px 15px;
+//             font-family: 'Roboto Slab', serif !important;
+//         }
+//     }
+//     .services-image-properties-page{
+//         width: 100%;
+//         z-index: 1;
+//         border-radius: 25px;
+//         grid-column: 5 / 1;
+//         margin-top: 75px;
+//         .services-image-properties-page-image{
+//             width: 100%;
+//         }
+//     }
 
-    .services-text-properties-page, .services-image-properties-page{
-        grid-row: 1 / 2;
-    }
-}
+//     .services-text-properties-page, .services-image-properties-page{
+//         grid-row: 1 / 2;
+//     }
+// }
 
 .caja-blanca-amenities-title{
     width: 250px;
     margin-left: 10%;
-    margin-top: 150px;
+    margin-top: 100px;
     .caja-blanca-amenities-title-properties-page{
         font-family: 'Roboto Slab', serif !important;
     }
@@ -388,8 +385,29 @@ $theme-colors:(
     }
 }
 
+.caja-blanca-menu-title-services{
+    margin-top: 100px;
+}
 
-
+.service-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    .service-image-item{
+        width: 30%;
+        .image-services{
+            width: 100%;
+        }
+    }
+    .btn-services{
+        font-weight: 500;
+    }
+    .service-text-item{
+        width: 30%;
+    }
+}
 
 
 
@@ -397,14 +415,27 @@ $theme-colors:(
 @media all and (max-width: 1700px) {
     .sticky{
         gap: 100px;
+        height: 100px;
+    }
+    .logo-header{
+        height: 75px;
     }
 
     .welcome-menu-homepage{
         width: 1000px;
     }
 
+    .welcome-menu-properties-page{
+        width: 1000px;
+        height: 500px;
+    }
+
     .properties-menu-images{
         width: 95%;
+    }
+
+    .caja-blanca-menu-title{
+        width: 300px;
     }
 
 }
