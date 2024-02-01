@@ -7,7 +7,7 @@ $theme-colors:(
     "info": #42d1d1,
 );
 
-@import "/node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 .sticky{
     height: 120px;
@@ -409,7 +409,12 @@ $theme-colors:(
     }
 }
 
-
+//About Us Page
+.about-us-background-image{
+    height: 30vh;
+    background-color: rgba(0,0,0,0.5);
+    
+}
 
 
 @media all and (max-width: 1700px) {
