@@ -11642,6 +11642,52 @@ textarea.form-control-lg {
   width: 30%;
 }
 
+.about-us-background-image {
+  height: 45vh;
+  background-color: #000;
+}
+.about-us-background-image .about-us-background-image-image {
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.about-us-information {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  align-items: center;
+  gap: 150px;
+}
+.about-us-information .about-us-information-text {
+  width: 400px;
+}
+.about-us-information .about-us-information-text .about-us-information-text-title {
+  font-family: "Roboto Slab", serif !important;
+}
+.about-us-information .about-us-information-image {
+  width: 400px;
+  height: 500px;
+  border-radius: 50px;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us-information .about-us-information-image .foto-mama {
+  margin-top: 75px;
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 100%;
+}
+.about-us-information .about-us-information-image .about-us-information-image-title {
+  font-family: "Roboto Slab", serif !important;
+  padding-top: 20px;
+}
+
 @media all and (max-width: 1700px) {
   .sticky {
     gap: 100px;
