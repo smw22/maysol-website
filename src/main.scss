@@ -219,6 +219,7 @@ $theme-colors:(
     .property:hover{
         background-color: #42d1d1;
         transform: translateY(-10px);
+        transform: scale(105%);
     }
     .property-links{
         color: #000;
@@ -414,7 +415,67 @@ $theme-colors:(
     }
 }
 
-//About Us Page
+// Management Página
+.management-background-image{
+    height: 85vh;
+    .management-background-image-image{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.management-title{
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    padding: 10px;
+    z-index: 1;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    .management-title-text{
+        margin-bottom: 20px ;
+    }
+    .btn-management-title{
+        transform: translateX(100%);
+    }
+}
+
+.management-our-services-content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    gap: 40px;
+    .management-our-services-content-text{
+        width: 625px;
+    }
+    .management-our-services-content-images{
+        width: 625px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+.card-img-top{
+    height: 165px;
+}
+.management-our-services-menu-title{
+    margin-bottom: 50px;
+    margin-top: 75px;
+}
+
+.management-our-services-content-text-decription-title{
+    font-family: 'Roboto Slab', serif !important;
+    padding-top: 20px;
+}
+.management-our-services-content-text-decription-subtitle{
+    font-size: 20px;
+}
+
+
+//About Us Página
 .about-us-background-image{
     height: 45vh;
     background-color: #000;
@@ -502,7 +563,7 @@ $theme-colors:(
 @media all and (max-width: 1700px) {
     .sticky{
         gap: 100px;
-        height: 100px;
+        height: 120px;
     }
     .logo-header{
         height: 75px;
