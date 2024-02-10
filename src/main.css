@@ -11318,6 +11318,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.body {
+  background-color: #f9f9f9;
+}
+
 .sticky {
   height: 120px;
   background: rgba(255, 255, 255, 0.9);
@@ -11490,6 +11494,8 @@ textarea.form-control-lg {
 }
 .properties-menu-images .property:hover {
   background-color: #42d1d1;
+  transform: translateY(-10px);
+  transform: scale(105%);
 }
 .properties-menu-images .property-links {
   color: #000;
@@ -11642,6 +11648,66 @@ textarea.form-control-lg {
   width: 30%;
 }
 
+.management-background-image {
+  height: 85vh;
+}
+.management-background-image .management-background-image-image {
+  height: 100%;
+  width: 100%;
+}
+
+.management-title {
+  position: absolute;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -110%);
+  padding: 10px;
+  z-index: 1;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.management-title .management-title-text {
+  margin-bottom: 20px;
+}
+.management-title .btn-management-title {
+  transform: translateX(100%);
+}
+
+.management-our-services-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  gap: 40px;
+}
+.management-our-services-content .management-our-services-content-text {
+  width: 625px;
+}
+.management-our-services-content .management-our-services-content-images {
+  width: 625px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-img-top {
+  height: 165px;
+}
+
+.management-our-services-menu-title {
+  margin-bottom: 50px;
+  margin-top: 75px;
+}
+
+.management-our-services-content-text-decription-title {
+  font-family: "Roboto Slab", serif !important;
+  padding-top: 20px;
+}
+
+.management-our-services-content-text-decription-subtitle {
+  font-size: 20px;
+}
+
 .about-us-background-image {
   height: 45vh;
   background-color: #000;
@@ -11688,10 +11754,46 @@ textarea.form-control-lg {
   padding-top: 20px;
 }
 
+.contact-background-image {
+  height: 45vh;
+  background-color: #000;
+}
+.contact-background-image .contact-background-image-image {
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.contact-information {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact-information .contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+}
+.contact-information .contact-item .contact-icon {
+  width: 100px;
+  height: 100px;
+}
+.contact-information .contact-item .contact-icon .image-contact {
+  width: 100%;
+}
+.contact-information .contact-item .contact-text {
+  padding: 10px 0;
+  text-align: center;
+}
+.contact-information .contact-item .contact-text .contact-text-title {
+  font-family: "Roboto Slab", serif !important;
+}
+
 @media all and (max-width: 1700px) {
   .sticky {
     gap: 100px;
-    height: 100px;
+    height: 120px;
   }
   .logo-header {
     height: 75px;
