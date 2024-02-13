@@ -25,7 +25,7 @@ $theme-colors:(
     .logo-header{
         height: 100px;
     }
-    nav ul{
+    .nav-list{
         display: flex;
         list-style-type: none;
         padding: 50px 0 ;
@@ -69,7 +69,32 @@ $theme-colors:(
     .nav-links:focus::after{
         opacity:1;
     }
+    .btn-dropdown{
+        border: transparent;
+        background-color: transparent;
+        font-weight: 500;
+    }
+    .dropdown-menu{
+        border-radius: 0;
+        padding: 10px;
+        min-width: 10rem !important;
+        margin-top: 8px !important;
+    }
+    .dropdown-item:hover{
+        background-color: rgba(66,209,209,0.2);
+    }
+    .dropdown-menu-item{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    .dropdown-menu-item:hover{
+        color: #42d1d1;
+    }
+    .banderas{
+        width: 20px;
+    }
 }
+
 
 .carousel-fade{
     width: 100%;
@@ -473,6 +498,55 @@ $theme-colors:(
 .management-our-services-content-text-decription-subtitle{
     font-size: 20px;
 }
+
+
+//Deals Página
+
+.deals-background-image{
+    height: 80vh;
+    .deals-background-image-image{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.caja-blanca-menu-title.caja-blanca-menu-title-services.deals-menu-title{
+    margin-top: 50px;
+    width: 600px; 
+}
+.caja-blanca-menu-title.caja-blanca-menu-title-services.last-minute-deals-menu-title{
+    width: 500px;
+}
+
+.btn.btn-info.btn.btn-management-title.btn-deals-title{
+    transform: translateX(35%);
+}
+
+.deals-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    .card-deals{
+        height: auto;
+        width: 30rem;
+        .card-image-deals{
+            height: 25rem;
+        }
+    }
+    .last-minute-card-deals{
+        width: 15rem;
+    }
+}
+
+.last-minute-deals{
+    gap: 35px;
+    .last-minute-card-image-deals{
+        height: 12rem;  
+    }
+}
+
 
 
 //About Us Página
