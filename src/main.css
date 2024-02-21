@@ -11414,11 +11414,18 @@ textarea.form-control-lg {
   width: 100%;
 }
 .carousel-item-homepage .carousel-caption {
-  bottom: 40%;
+  bottom: 35%;
 }
 .carousel-item-homepage .carousel-homepage-property-title {
   font-size: 60px;
+}
+.carousel-item-homepage .carousel-homepage-property-price {
   padding-bottom: 10px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.carousel-item-homepage .btn-info {
+  color: white;
 }
 
 .around-carousel-icon-square {
@@ -11493,6 +11500,7 @@ textarea.form-control-lg {
 
 .properties-menu-images {
   display: flex;
+  position: relative;
   gap: 50px;
   width: 80%;
   flex-wrap: wrap;
@@ -11505,6 +11513,7 @@ textarea.form-control-lg {
   height: 490px;
   background-color: rgb(240, 240, 239);
   transition: 0.5s;
+  position: relative;
 }
 .properties-menu-images .property .properties-menu-first-property-image, .properties-menu-images .property .properties-menu-second-property-image {
   height: 375px;
@@ -11524,6 +11533,14 @@ textarea.form-control-lg {
 .properties-menu-images .property-links {
   color: #000;
   text-decoration: none;
+}
+.properties-menu-images .properties-menu-first-property-price {
+  position: absolute;
+  bottom: 125px;
+  right: 25px;
+  color: white;
+  font-size: 23px;
+  font-weight: 500;
 }
 
 .footer-info {
@@ -11577,7 +11594,8 @@ textarea.form-control-lg {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin: 15px auto;
-  width: 60%;
+  width: 75%;
+  max-width: 1250px;
   justify-content: center;
 }
 .welcome-menu-properties-page .welcome-text-properties-page {
@@ -11872,7 +11890,7 @@ textarea.form-control-lg {
     width: 1000px;
   }
   .welcome-menu-properties-page {
-    width: 1000px;
+    width: 1200px;
     height: 500px;
   }
   .properties-menu-images {
@@ -11880,6 +11898,9 @@ textarea.form-control-lg {
   }
   .caja-blanca-menu-title {
     width: 300px;
+  }
+  .caja-blanca-amenities-title {
+    margin-top: 200px;
   }
 }
 @media all and (max-width: 1250px) {
