@@ -11409,12 +11409,7 @@ textarea.form-control-lg {
 }
 
 .carousel-item-homepage {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
   height: 85vh;
-  min-height: 85vh;
   width: 100%;
 }
 .carousel-item-homepage .carousel-caption {
@@ -11430,6 +11425,12 @@ textarea.form-control-lg {
 }
 .carousel-item-homepage .btn-info {
   color: white;
+}
+.carousel-item-homepage .carousel-image-homepage {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
 }
 
 .around-carousel-icon-square {
@@ -11470,6 +11471,7 @@ textarea.form-control-lg {
   z-index: 1;
   border-radius: 25px;
   grid-column: 2/-1;
+  box-shadow: 1px 1px 5px #000000;
 }
 .welcome-menu-homepage .welcome-image-homepage .welcome-image-homepage-image {
   width: 100%;
@@ -11483,16 +11485,19 @@ textarea.form-control-lg {
   justify-content: center;
   text-align: center;
   margin: auto;
-  width: 16%;
+  width: auto;
 }
 .properties-menu-title .properties-menu-title-homepage {
-  justify-content: center;
+  margin: auto;
+  width: auto;
   font-family: "Roboto Slab", serif !important;
 }
-.properties-menu-title .properties-menu-title-homepage-line {
+
+.properties-menu-title-homepage-line {
   justify-content: center;
   align-items: center;
-  width: 100%;
+  margin: auto;
+  width: 16%;
   height: 2px;
   background-color: #000000;
   margin-bottom: 50px;
@@ -11518,6 +11523,7 @@ textarea.form-control-lg {
   background-color: rgb(240, 240, 239);
   transition: 0.5s;
   position: relative;
+  box-shadow: 1px 1px 5px #000000;
 }
 .properties-menu-images .property .properties-menu-first-property-image, .properties-menu-images .property .properties-menu-second-property-image {
   height: 375px;
@@ -11657,18 +11663,25 @@ textarea.form-control-lg {
   width: 80%;
 }
 .amenities-elements .amenities-item {
-  height: 40px;
+  height: 60px;
   align-items: center;
   justify-content: center;
   width: 200px;
   font-family: "Roboto Slab", serif !important;
   font-weight: bold;
+  margin-bottom: 20px;
+  padding: 40px 20px;
 }
 .amenities-elements .first-row-amenities-elements, .amenities-elements .second-row-amenities-elements, .amenities-elements .third-row-amenities-elements, .amenities-elements .fourth-row-amenities-elements {
   display: flex;
-  padding: 20px;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 20px;
+}
+.amenities-elements .amenities-item-image {
+  width: 40px;
+}
+.amenities-elements .amenities-item-image-special {
+  width: 6%;
 }
 
 .caja-blanca-menu-title-services {
@@ -11911,26 +11924,145 @@ textarea.form-control-lg {
   .caja-blanca-amenities-title {
     margin-top: 300px;
   }
+  .properties-menu-title-homepage-line {
+    width: 20%;
+  }
 }
 @media all and (max-width: 1250px) {
+  .sticky {
+    justify-content: space-around;
+    height: 100px;
+  }
+  .sticky .logo {
+    padding: 10px;
+  }
+  .sticky .logo-header {
+    height: 75px;
+  }
+  .dropdown-menu-phone {
+    border: 0;
+    background-color: transparent;
+  }
   nav {
     display: none;
   }
   .nav-menu-phone {
     display: block;
+    padding: 22px;
   }
   .phone-nav-menu-icon {
-    width: 60px;
+    width: 50px;
+    margin-top: 15px;
+  }
+  .carousel-item-homepage {
+    height: auto; /* Set height to auto for mobile devices */
+    width: 100%;
   }
   .carousel-fade {
     margin-top: 120px;
+  }
+  .carousel-homepage-property-title {
+    font-size: 20px;
+  }
+  .carousel-caption {
+    bottom: 15% !important;
+  }
+  .welcome-menu-homepage {
+    grid-template-columns: repeat(2, 1fr); /* Change to two columns for screens smaller than 768px */
+    display: block;
+    width: 80%;
+  }
+  .welcome-text-homepage {
+    height: auto;
+    margin-bottom: 25px;
+  }
+  .properties-menu-title-homepage-line {
+    width: 45%;
+  }
+  .properties-menu-first-property-image {
+    height: 375px;
+    width: 80%;
+  }
+  .property-links {
+    width: 100%;
+  }
+  .properties-menu-images {
+    width: 80%;
+  }
+  .properties-menu-images .property {
+    width: 100%;
+    height: auto;
+    background-color: rgb(240, 240, 239);
+    transition: 0.5s;
+    position: relative;
+  }
+  .properties-menu-images .property .properties-menu-first-property-image, .properties-menu-images .property .properties-menu-second-property-image {
+    height: auto;
+    width: 100%;
   }
   .footer-info {
     display: block;
     height: auto;
     width: 100%;
   }
-  .welcome-menu-homepage {
+  .welcome-menu-properties-page {
     display: block;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    height: auto;
+  }
+  .welcome-menu-properties-page .welcome-image-properties-page {
+    margin-top: 0;
+    margin-bottom: 20px;
+    height: auto;
+    order: 1;
+  }
+  .welcome-menu-properties-page .welcome-text-properties-page {
+    order: 2;
+  }
+  .caja-blanca-amenities-title {
+    margin-top: 50px;
+  }
+  .caja-blanca-menu-title {
+    margin-top: 100px;
+  }
+  .service-item {
+    flex-direction: column;
+  }
+  .service-item .service-image-item {
+    width: 90%;
+  }
+  .service-item .btn-services {
+    font-weight: 500;
+  }
+  .service-item .service-text-item {
+    width: 90%;
+  }
+  .third-service-text, .second-service-text {
+    order: 2;
+  }
+  .third-service-image, .second-service-image {
+    order: 1;
+  }
+}
+@media all and (max-width: 775px) {
+  .sticky {
+    justify-content: space-around;
+    height: 80px;
+  }
+  .sticky .logo-header {
+    height: 60px;
+  }
+  .phone-nav-menu-icon {
+    width: 30px;
+    margin-top: 5px;
+  }
+  .carousel-fade {
+    margin-top: 80px;
+  }
+  .carousel-item-homepage .carousel-caption .carousel-homepage-property-title {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
