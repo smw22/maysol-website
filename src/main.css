@@ -11709,19 +11709,22 @@ textarea.form-control-lg {
 }
 
 .management-background-image {
-  height: 85vh;
+  height: auto;
 }
 .management-background-image .management-background-image-image {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
 .management-title {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -110%);
+  transform: translate(-50%, -100%);
   padding: 10px;
   z-index: 1;
   font-size: 20px;
@@ -11731,7 +11734,8 @@ textarea.form-control-lg {
   margin-bottom: 20px;
 }
 .management-title .btn-management-title {
-  transform: translateX(100%);
+  transform: translateX(50%);
+  width: 200px;
   color: white;
 }
 
@@ -11770,10 +11774,10 @@ textarea.form-control-lg {
 }
 
 .deals-background-image {
-  height: 85vh;
+  height: auto;
 }
 .deals-background-image .deals-background-image-image {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
@@ -11862,12 +11866,12 @@ textarea.form-control-lg {
 }
 
 .contact-background-image {
-  height: 45vh;
+  height: auto;
   background-color: #000;
 }
 .contact-background-image .contact-background-image-image {
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   opacity: 0.5;
 }
 
@@ -11961,11 +11965,8 @@ textarea.form-control-lg {
   .carousel-fade {
     margin-top: 120px;
   }
-  .carousel-homepage-property-title {
-    font-size: 20px;
-  }
   .carousel-caption {
-    bottom: 15% !important;
+    bottom: 25% !important;
   }
   .welcome-menu-homepage {
     grid-template-columns: repeat(2, 1fr); /* Change to two columns for screens smaller than 768px */
@@ -12046,6 +12047,88 @@ textarea.form-control-lg {
   .third-service-image, .second-service-image {
     order: 1;
   }
+  .contact-background-image {
+    margin-top: 100px;
+  }
+  .contact-information {
+    flex-direction: column;
+  }
+  .contact-information .contact-item {
+    padding: 40px 0;
+  }
+  .about-us-background-image {
+    height: auto;
+    margin-top: 100px;
+  }
+  .about-us-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  .about-us-information .about-us-information-text {
+    width: 90%;
+  }
+  .about-us-information .about-us-information-image {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us-information .about-us-information-image .foto-mama {
+    margin-top: 75px;
+    width: 50%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .management-background-image {
+    margin-top: 100px;
+  }
+  .management-our-services-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .management-our-services-content .management-our-services-content-text {
+    width: 90%;
+  }
+  .management-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -250%);
+    padding: 10px;
+    z-index: 1;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
+  .management-title .management-title-text {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 500px;
+  }
+  .management-title .btn-management-title {
+    align-items: center;
+    transform: translateX(75%);
+    width: 200px;
+    color: white;
+  }
+  .management-our-services-menu-title {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  .caja-blanca-menu-title .caja-blanca-menu-title-homepage-line {
+    margin-bottom: 5px;
+  }
 }
 @media all and (max-width: 775px) {
   .sticky {
@@ -12059,10 +12142,96 @@ textarea.form-control-lg {
     width: 30px;
     margin-top: 5px;
   }
+  .carousel-item-homepage {
+    height: auto; /* Set height to auto for mobile devices */
+    width: 100%;
+  }
   .carousel-fade {
     margin-top: 80px;
   }
   .carousel-item-homepage .carousel-caption .carousel-homepage-property-title {
+    font-size: 26px;
+  }
+  .carousel-item-homepage .carousel-homepage-property-price {
+    font-size: 18px;
+  }
+  .around-carousel-icon-square {
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    padding-top: 12px;
+    border-radius: 4px;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .carousel-item-homepage .btn-info {
+    width: 110px;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 12px;
+    padding: 5px;
+  }
+  .carousel-caption {
+    bottom: 15% !important;
+  }
+  .about-us-background-image {
+    margin-top: 80px;
+  }
+  .contact-background-image {
+    margin-top: 80px;
+  }
+  .management-background-image {
+    margin-top: 80px;
+  }
+  .management-our-services-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .management-our-services-content .management-our-services-content-text {
+    width: 90%;
+  }
+  .management-our-services-content .management-our-services-content-images {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .management-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -400%);
+    padding: 10px;
+    z-index: 1;
     font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
+  .management-title .management-title-text {
+    text-align: center;
+    margin-bottom: 5px;
+    width: 250px;
+    font-size: 20px;
+  }
+  .management-title .btn-management-title {
+    align-items: center;
+    transform: translateX(75%);
+    width: 100px;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+  }
+}
+@media all and (max-width: 375px) {
+  .management-title {
+    top: 63%;
   }
 }/*# sourceMappingURL=main.css.map */
