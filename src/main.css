@@ -11958,6 +11958,9 @@ textarea.form-control-lg {
     width: 50px;
     margin-top: 15px;
   }
+  a.dropdown-item.nav-links {
+    padding-left: 0;
+  }
   .carousel-item-homepage {
     height: auto; /* Set height to auto for mobile devices */
     width: 100%;
