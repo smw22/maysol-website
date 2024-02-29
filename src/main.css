@@ -11791,7 +11791,7 @@ textarea.form-control-lg {
 }
 
 .btn.btn-info.btn.btn-management-title.btn-deals-title {
-  transform: translateX(35%);
+  transform: translateX(2%);
 }
 
 .deals-menu {
@@ -12029,6 +12029,9 @@ textarea.form-control-lg {
   .caja-blanca-menu-title {
     margin-top: 100px;
   }
+  .caja-blanca-menu-title .caja-blanca-menu-title-homepage-line {
+    margin-bottom: 35px;
+  }
   .service-item {
     flex-direction: column;
   }
@@ -12126,8 +12129,31 @@ textarea.form-control-lg {
     margin-top: 40px;
     margin-bottom: 0;
   }
+  .deals-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .last-minute-deals {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 20px 50px 20px;
+  }
+  .caja-blanca-menu-title.caja-blanca-menu-title-services.deals-menu-title {
+    margin-top: 50px;
+    width: 200px;
+  }
+  .btn.btn-info.btn.btn-management-title.btn-deals-title {
+    transform: translateX(75%);
+  }
+  .caja-blanca-menu-title-homepage.deals-title {
+    font-size: 25px;
+  }
   .caja-blanca-menu-title .caja-blanca-menu-title-homepage-line {
-    margin-bottom: 5px;
+    width: 300px;
+    margin: 0 auto 25px auto;
+  }
+  .deals-background-image {
+    margin-top: 100px;
   }
 }
 @media all and (max-width: 775px) {
@@ -12182,6 +12208,10 @@ textarea.form-control-lg {
   .contact-background-image {
     margin-top: 80px;
   }
+  .caja-blanca-menu-title .caja-blanca-menu-title-homepage-line {
+    width: 150px;
+    margin: 0 auto 35px auto;
+  }
   .management-background-image {
     margin-top: 80px;
   }
@@ -12228,6 +12258,40 @@ textarea.form-control-lg {
     color: white;
     font-size: 15px;
     padding: 5px;
+  }
+  .management-our-services-content-text-decription-title {
+    font-size: 25px;
+    padding-top: 0;
+  }
+  .management-our-services-content-text-decription-subtitle {
+    font-size: 18px;
+  }
+  .deals-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .deals-menu .card-deals {
+    height: auto;
+    width: 90%;
+  }
+  .deals-menu .card-deals .card-image-deals {
+    height: auto;
+  }
+  .deals-menu .last-minute-card-deals {
+    width: 15rem;
+  }
+  .caja-blanca-menu-title.caja-blanca-menu-title-services.last-minute-deals-menu-title {
+    width: 200px;
+  }
+  .deals-background-image {
+    margin-top: 80px;
+  }
+  .management-title.deals-image-title {
+    margin-top: 50px;
+  }
+  .btn.btn-info.btn.btn-management-title.btn-deals-title {
+    width: 125px;
+    transform: translateX(50%);
   }
 }
 @media all and (max-width: 375px) {
