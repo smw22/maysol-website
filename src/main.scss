@@ -3,9 +3,9 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-$theme-colors:(
-    "info": #42d1d1,
-);
+:root{
+    --color-blue: #42d1d1;
+};
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -56,7 +56,7 @@ $theme-colors:(
         content: "";
         height: 3px;
         width: 100%;
-        background-color: rgb(66, 219, 219);
+        background-color: var(--color-blue);
         position: absolute;
         left: 0;
         bottom: -15px;
@@ -88,7 +88,7 @@ $theme-colors:(
         text-decoration: none;
     }
     .dropdown-menu-item:hover{
-        color: #42d1d1;
+        color: var(--color-blue);
     }
     .banderas{
         width: 20px;
@@ -262,7 +262,7 @@ $theme-colors:(
         }
     }
     .property:hover{
-        background-color: #42d1d1;
+        background-color: var(--color-blue);
         transform: translateY(-10px);
         transform: scale(105%);
     }
@@ -300,7 +300,7 @@ $theme-colors:(
         text-decoration: none;
     }
     .footer-links:hover{
-        color: #42d1d1;
+        color: var(--color-blue);
         text-decoration: none;
     }
     .footer-text{
@@ -309,6 +309,32 @@ $theme-colors:(
 }
 
 //Pagina principal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Pagina de Caja Blanca
 
@@ -371,310 +397,6 @@ $theme-colors:(
         grid-row: 1 / 2;
     }
 }
-
-
-
-//Calendar
-
-// .container{
-//     display: flex;
-//   height: 70vh;
-//   width: 100%;
-//   justify-content: center;
-//   align-items: center;
-//   place-items: center;
-//   overflow: hidden;
-// }
-// .calendar {
-//     height: 30rem;
-//     width: max-content;
-//     background-color: white;
-//     border-radius: 25px;
-//     overflow: hidden;
-//     padding: 35px 50px 0px 50px;
-//   }
-
-//   .calendar {
-//     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-//   }
-  
-//   .calendar-header {
-//     background: #8089FE;
-//     display: flex;
-//     justify-content: space-between;
-//     border-radius: 7px;
-//     align-items: center;
-//     font-weight: 700;
-//     color: #ffffff;
-//     padding: 10px;
-//   }
-  
-//   .calendar-body {
-//     padding: 10px;
-//   }
-  
-//   .calendar-week-days {
-//     display: grid;
-//     grid-template-columns: repeat(7, 1fr);
-//     font-weight: 600;
-//     cursor: pointer;
-//     color: rgb(104, 104, 104);
-//   }
-  
-//   .calendar-week-days div:hover {
-//     color: black;
-//     transform: scale(1.2);
-//     transition: all .2s ease-in-out;
-//   }
-  
-//   .calendar-week-days div {
-//     display: grid;
-//     place-items: center;
-//     color: #6D67CF;
-//     height: 50px;
-//   }
-  
-//   .calendar-days {
-//     display: grid;
-//     grid-template-columns: repeat(7, 1fr);
-//     gap: 2px;
-//     color: #0A0921;
-//   }
-  
-//   .calendar-days div {
-//     width: 37px;
-//     height: 33px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     padding: 5px;
-//     position: relative;
-//     cursor: pointer;
-//     animation: to-top 1s forwards;
-//   }
-  
-//   .month-picker {
-//     padding: 5px 10px;
-//     border-radius: 10px;
-//     cursor: pointer;
-//   }
-  
-//   .year-picker {
-//     display: flex;
-//     align-items: center;
-//   }
-
-//   pre{
-//     margin-top: 12px;
-//   }
-  
-//   .year-change {
-//     height: 30px;
-//     width: 30px;
-//     border-radius: 50%;
-//     display: grid;
-//     place-items: center;
-//     margin: 0px 10px;
-//     cursor: pointer;
-//   }
-  
-//   .year-change:hover {
-//     background-color: #9796f0;
-//     transition: all .2s ease-in-out;
-//     transform: scale(1.12);
-//   }
-  
-//   .calendar-footer {
-//     padding: 10px;
-//     display: flex;
-//     justify-content: flex-end;
-//     align-items: center;
-//   }
-  
-//   #year:hover {
-//     cursor: pointer;
-//     transform: scale(1.2);
-//     transition: all 0.2 ease-in-out;
-//   }
-  
-//   .calendar-days div span {
-//     position: absolute;
-//   }
-  
-//   .calendar-days div:hover {
-//     transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
-//     background-color: #fbc7d4;
-//     border-radius: 20%;
-//     color: #f8fbff;
-//   }
-  
-//   .calendar-days div.current-date {
-//     color: #f8fbff;
-//     background-color: #9796f0;
-//     border-radius: 20%;
-//   }
-  
-//   .month-list {
-//     position: relative;
-//     left: 0;
-//     top: -130px;
-//     background-color: #ebebeb;
-//     color: #151426;
-//     display: grid;
-//     grid-template-columns: repeat(3, auto);
-//     gap: 5px;
-//     border-radius: 20px;
-//   }
-  
-//   .month-list>div {
-//     display: grid;
-//     place-content: center;
-//     margin: 5px 10px;
-//     transition: all 0.2s ease-in-out;
-//   }
-  
-//   .month-list>div>div {
-//     border-radius: 15px;
-//     padding: 10px;
-//     cursor: pointer;
-//   }
-  
-//   .month-list>div>div:hover {
-//     background-color: #9796f0;
-//     color: #f8fbff;
-//     transform: scale(0.9);
-//     transition: all 0.2s ease-in-out;
-//   }
-  
-//   .month-list.show {
-//     visibility: visible;
-//     pointer-events: visible;
-//     transition: 0.6s ease-in-out;
-//     animation: to-left .71s forwards;
-//   }
-  
-//   .month-list.hideonce {
-//     visibility: hidden;
-//   }
-  
-//   .month-list.hide {
-//     animation: to-right 1s forwards;
-//     visibility: none;
-//     pointer-events: none;
-//   }
-  
-//   .date-time-formate {
-//     height: 4rem;
-//     width: 100%;
-//     font-family: Dubai Light, Century Gothic;
-//     position: relative;
-//     display: flex;
-//     top: 50px;
-//     justify-content: center;
-//     align-items: center;
-//   }
-  
-//   .day-text-formate {
-//     font-family: Microsoft JhengHei UI;
-//     font-size: 1.4rem;
-//     padding-right: 5%;
-//     border-right: 3px solid #9796f0;
-//   }
-  
-//   .date-time-value {
-//     display: block;
-//     position: relative;
-//     text-align: center;
-//     padding-left: 5%;
-//   }
-  
-//   .time-formate {
-//     font-size: 1.5rem;
-//   }
-  
-//   .time-formate.hideTime {
-//     animation: hidetime 1.5s forwards;
-//   }
-  
-//   .day-text-formate.hidetime {
-//     animation: hidetime 1.5s forwards;
-//   }
-  
-//   .date-formate.hideTime {
-//     animation: hidetime 1.5s forwards;
-//   }
-  
-//   .day-text-formate.showtime {
-//     animation: showtime 1s forwards;
-//   }
-  
-//   .time-formate.showtime {
-//     animation: showtime 1s forwards;
-//   }
-  
-//   .date-formate.showtime {
-//     animation: showtime 1s forwards;
-//   }
-  
-//   @keyframes to-top {
-//     0% {
-//       transform: translateY(0);
-//       opacity: 0;
-//     }
-  
-//     100% {
-//       transform: translateY(100%);
-//       opacity: 1;
-//     }
-//   }
-  
-//   @keyframes to-left {
-//     0% {
-//       transform: translatex(230%);
-//       opacity: 1;
-//     }
-  
-//     100% {
-//       transform: translatex(0);
-//       opacity: 1;
-//     }
-//   }
-  
-//   @keyframes to-right {
-//     10% {
-//       transform: translatex(0);
-//       opacity: 1;
-//     }
-  
-//     100% {
-//       transform: translatex(-150%);
-//       opacity: 1;
-//     }
-//   }
-  
-//   @keyframes showtime {
-//     0% {
-//       transform: translatex(250%);
-//       opacity: 1;
-//     }
-  
-//     100% {
-//       transform: translatex(0%);
-//       opacity: 1;
-//     }
-//   }
-  
-//   @keyframes hidetime {
-//     0% {
-//       transform: translatex(0%);
-//       opacity: 1;
-//     }
-  
-//     100% {
-//       transform: translatex(-370%);
-//       opacity: 1;
-//     }
-//   }
 
 
 .caja-blanca-amenities-title{
@@ -745,7 +467,33 @@ $theme-colors:(
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Management Página
+
+
 .management-background-image{
     height: auto;
     .management-background-image-image{
@@ -756,13 +504,10 @@ $theme-colors:(
 
 .management-title{
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -100%);
+    margin-top: -68px;
+    margin-left: -225px;
     padding: 10px;
     z-index: 1;
     font-size: 20px;
@@ -771,8 +516,12 @@ $theme-colors:(
         margin-bottom: 20px ;
     }
     .btn-management-title{
-        transform: translateX(50%);
         width: 200px;
+        color: white;
+        transform: translateX(50%);
+    }
+    .btn.btn-info.btn.btn-management-title-responsive{
+        display: none;
         color: white;
     }
 }
@@ -810,6 +559,32 @@ $theme-colors:(
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Deals Página
 
 .deals-background-image{
@@ -828,8 +603,19 @@ $theme-colors:(
     width: 500px;
 }
 
-.btn.btn-info.btn.btn-management-title.btn-deals-title{
-    transform: translateX(2%);
+.management-title.deals-image-title{
+    width: 300px;
+    margin-left: -150px;
+    .deals-title-text{
+        transform: translateX(15%);
+        width: fit-content;
+    }
+    .btn-deals-title{
+        transform: translateX(19%);
+    }
+    .btn.btn-info.btn.btn-management-title.btn-deals-title-responsive{
+        display: none;
+    }
 }
 
 .deals-menu{
@@ -859,14 +645,36 @@ $theme-colors:(
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //About Us Página
 .about-us-background-image{
-    height: 45vh;
+    height: auto;
+    width: 100%;
     background-color: #000;
     .about-us-background-image-image{
-        height: 100%;
+        height: 550px;
         width: 100%;
         opacity: 0.5;
+        object-fit: cover;
+        object-position: center center;
     }
 }
 
@@ -905,14 +713,39 @@ $theme-colors:(
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Contact Page
+
 .contact-background-image{
     height: auto;
+    width: 100%;
     background-color: #000;
     .contact-background-image-image{
-        height: 100%;
-        max-width: 100%;
+        width: 100%;
         opacity: 0.5;
+        height: 535px;
+        object-fit: cover;
+        object-position: center center;
+
     }
 }
 
@@ -941,6 +774,22 @@ $theme-colors:(
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -984,6 +833,24 @@ $theme-colors:(
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width: 1250px) {
     
     .sticky{
@@ -992,7 +859,7 @@ $theme-colors:(
     }
 
     .sticky .logo{
-        padding: 10px;
+        padding: 13px;
     }
 
     .sticky .logo-header{
@@ -1185,28 +1052,27 @@ $theme-colors:(
 
     .management-title{
         position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        top: 50%;
+        top: 30%;
         left: 50%;
-        transform: translate(-50%, -250%);
+        margin-top: -68px;
+        margin-left: -171px;
         padding: 10px;
         z-index: 1;
         font-size: 20px;
         color: rgb(255, 255, 255);
         .management-title-text{
-            text-align: center;
-            margin-bottom: 20px ;
-            width: 500px;
+            margin-bottom: 20px;
+            font-size: 30px;
         }
         .btn-management-title{
-            align-items: center;
-            transform: translateX(75%);
-            width: 200px;
-            color: white;
+            display: none;
         }
+        .btn.btn-info.btn.btn-management-title-responsive{
+            display: block;
+            color: white;
+            transform: translateX(100%);
+        }
+        
     }
     .management-our-services-menu-title{
         margin-top: 40px;
@@ -1234,6 +1100,22 @@ $theme-colors:(
         font-size: 25px;
     }
 
+    .management-title.deals-image-title{
+        margin-left: -116px;
+        width: 200px;
+        .deals-title-text{
+            transform: translateX(5%);
+        }
+        .btn-deals-title{
+            display: none;
+        }
+        .btn.btn-info.btn.btn-management-title.btn-deals-title-responsive{
+            display: block;
+            width: fit-content;
+            transform: translateX(22%);
+        }
+    }
+
     .caja-blanca-menu-title .caja-blanca-menu-title-homepage-line {
         width: 300px;
         margin: 0 auto 25px auto;
@@ -1244,6 +1126,42 @@ $theme-colors:(
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width: 775px) {
     .sticky{
         justify-content: space-around;
@@ -1334,31 +1252,27 @@ $theme-colors:(
     }
     .management-title{
         position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        top: 50%;
+        top: 20%;
         left: 50%;
-        transform: translate(-50%, -400%);
+        margin-top: -68px;
+        margin-left: -117px;
         padding: 10px;
         z-index: 1;
         font-size: 20px;
         color: rgb(255, 255, 255);
         .management-title-text{
-            text-align: center;
-            margin-bottom: 5px ;
-            width: 250px;
+            margin-bottom: 20px;
             font-size: 20px;
         }
         .btn-management-title{
-            align-items: center;
-            transform: translateX(75%);
-            width: 100px;
-            color: white;
-            font-size: 15px;
-            padding: 5px;
+            display: none;
         }
+        .btn.btn-info.btn.btn-management-title-responsive{
+            display: block;
+            color: white;
+            transform: translateX(50%);
+        }
+        
     }
     .management-our-services-content-text-decription-title{
         font-size: 25px;
@@ -1384,6 +1298,25 @@ $theme-colors:(
     }
     .caja-blanca-menu-title.caja-blanca-menu-title-services.last-minute-deals-menu-title{
         width: 200px;
+    }
+
+    .management-title.deals-image-title{
+        margin-left: -116px;
+        width: 200px;
+        top: 7%;
+        .deals-title-text{
+            transform: translateX(5%);
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .btn-deals-title{
+            display: none;
+        }
+        .btn.btn-info.btn.btn-management-title.btn-deals-title-responsive{
+            display: block;
+            width: fit-content;
+            transform: translateX(22%);
+        }
     }
 
     .deals-background-image{
