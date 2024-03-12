@@ -12071,11 +12071,12 @@ textarea.form-control-lg {
 }
 
 .carousel-item-homepage {
+  margin-top: 120px;
   height: 85vh;
   width: 100%;
 }
 .carousel-item-homepage .carousel-caption {
-  bottom: 35%;
+  bottom: 40%;
 }
 .carousel-item-homepage .carousel-homepage-property-title {
   font-size: 60px;
@@ -12372,10 +12373,16 @@ textarea.form-control-lg {
 
 .management-background-image {
   height: auto;
+  margin-top: 120px;
+  width: 100%;
 }
 .management-background-image .management-background-image-image {
-  height: auto;
+  height: 775px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 .management-title {
@@ -12438,10 +12445,16 @@ textarea.form-control-lg {
 
 .deals-background-image {
   height: auto;
+  margin-top: 120px;
+  width: 100%;
 }
 .deals-background-image .deals-background-image-image {
-  height: auto;
+  height: 850px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 .caja-blanca-menu-title.caja-blanca-menu-title-services.deals-menu-title {
@@ -12454,7 +12467,7 @@ textarea.form-control-lg {
 }
 
 .management-title.deals-image-title {
-  width: 300px;
+  width: auto;
   margin-left: -150px;
 }
 .management-title.deals-image-title .deals-title-text {
@@ -12475,23 +12488,37 @@ textarea.form-control-lg {
   align-items: center;
   gap: 50px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto 50px auto;
 }
 .deals-menu .card-deals {
   height: auto;
-  width: 30rem;
+  width: auto;
 }
 .deals-menu .card-deals .card-image-deals {
   height: 25rem;
 }
-.deals-menu .last-minute-card-deals {
-  width: 15rem;
-}
 
 .last-minute-deals {
-  gap: 35px;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.last-minute-deals .last-minute-card-deals {
+  height: auto;
+  width: auto;
+}
+.last-minute-deals .last-minute-deals-row {
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .last-minute-deals .last-minute-card-image-deals {
-  height: 12rem;
+  height: 400px;
+  width: auto;
 }
 
 .about-us-background-image {
@@ -12649,6 +12676,7 @@ textarea.form-control-lg {
   .carousel-item-homepage {
     height: auto; /* Set height to auto for mobile devices */
     width: 100%;
+    margin-top: 0px;
   }
   .carousel-fade {
     margin-top: 120px;
@@ -12819,11 +12847,6 @@ textarea.form-control-lg {
     display: flex;
     flex-direction: column;
   }
-  .last-minute-deals {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 20px 50px 20px;
-  }
   .caja-blanca-menu-title.caja-blanca-menu-title-services.deals-menu-title {
     margin-top: 50px;
     width: 200px;
@@ -12935,7 +12958,7 @@ textarea.form-control-lg {
   }
   .management-title {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     margin-top: -68px;
     margin-left: -117px;
@@ -12965,17 +12988,40 @@ textarea.form-control-lg {
   }
   .deals-menu {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto 50px auto;
   }
   .deals-menu .card-deals {
     height: auto;
-    width: 90%;
+    width: auto;
   }
   .deals-menu .card-deals .card-image-deals {
     height: auto;
   }
-  .deals-menu .last-minute-card-deals {
-    width: 15rem;
+  .last-minute-deals {
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .last-minute-deals .last-minute-card-deals {
+    height: auto;
+    width: 90%;
+  }
+  .last-minute-deals .last-minute-deals-row {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .last-minute-deals .last-minute-card-image-deals {
+    height: auto;
+    width: 100%;
   }
   .caja-blanca-menu-title.caja-blanca-menu-title-services.last-minute-deals-menu-title {
     width: 200px;
@@ -13008,10 +13054,5 @@ textarea.form-control-lg {
   .btn.btn-info.btn.btn-management-title.btn-deals-title {
     width: 125px;
     transform: translateX(50%);
-  }
-}
-@media all and (max-width: 375px) {
-  .management-title {
-    top: 63%;
   }
 }/*# sourceMappingURL=main.css.map */

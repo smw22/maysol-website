@@ -104,10 +104,11 @@
     width: 100%;
 }
 .carousel-item-homepage{
+    margin-top: 120px;
     height: 85vh;
     width: 100%;
     .carousel-caption{
-        bottom: 35%;
+        bottom: 40%;
     }
     .carousel-homepage-property-title{
         font-size: 60px;
@@ -496,9 +497,13 @@
 
 .management-background-image{
     height: auto;
+    margin-top: 120px;
+    width: 100%;
     .management-background-image-image{
-        height: auto;
+        height: 775px;
         width: 100%;
+        object-fit: cover;
+        object-position: center center;
     }
 }
 
@@ -589,9 +594,13 @@
 
 .deals-background-image{
     height: auto;
+    margin-top: 120px;
+    width: 100%;
     .deals-background-image-image{
-        height: auto;
+        height: 850px;
         width: 100%;
+        object-fit: cover;
+        object-position: center center;
     }
 }
 
@@ -604,7 +613,7 @@
 }
 
 .management-title.deals-image-title{
-    width: 300px;
+    width: auto;
     margin-left: -150px;
     .deals-title-text{
         transform: translateX(15%);
@@ -624,22 +633,36 @@
     align-items: center;
     gap: 50px;
     margin-bottom: 50px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto 50px auto;
     .card-deals{
         height: auto;
-        width: 30rem;
+        width: auto;
         .card-image-deals{
             height: 25rem;
         }
     }
-    .last-minute-card-deals{
-        width: 15rem;
-    }
 }
 
 .last-minute-deals{
-    gap: 35px;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    .last-minute-card-deals{
+        height: auto;
+        width: auto;
+    }
+    .last-minute-deals-row{
+        gap: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     .last-minute-card-image-deals{
-        height: 12rem;  
+        height: 400px;  
+        width: auto;
     }
 }
 
@@ -893,6 +916,7 @@
     .carousel-item-homepage {
         height: auto; /* Set height to auto for mobile devices */
         width: 100%;
+        margin-top: 0px;
     }
 
     .carousel-fade {
@@ -1084,11 +1108,6 @@
         display: flex;
         flex-direction: column;
     }
-    .last-minute-deals{
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 0 20px 50px 20px;
-    }
     .caja-blanca-menu-title.caja-blanca-menu-title-services.deals-menu-title {
         margin-top: 50px;
         width: 200px;
@@ -1252,7 +1271,7 @@
     }
     .management-title{
         position: absolute;
-        top: 20%;
+        top: 30%;
         left: 50%;
         margin-top: -68px;
         margin-left: -117px;
@@ -1282,20 +1301,48 @@
         font-size: 18px;
     }
     //deals
+
     .deals-menu{
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto 50px auto;
         .card-deals{
             height: auto;
-            width: 90%;
+            width: auto;
             .card-image-deals{
                 height: auto;
             }
         }
+    }
+    
+    .last-minute-deals{
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
         .last-minute-card-deals{
-            width: 15rem;
+            height: auto;
+            width: 90%;
+        }
+        .last-minute-deals-row{
+            gap: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .last-minute-card-image-deals{
+            height: auto;  
+            width: 100%;
         }
     }
+    
+    
+
     .caja-blanca-menu-title.caja-blanca-menu-title-services.last-minute-deals-menu-title{
         width: 200px;
     }
@@ -1331,10 +1378,3 @@
     }
 
 }
-
-@media all and (max-width: 375px){
-    .management-title{
-        top: 63%;
-    }
-}
-
