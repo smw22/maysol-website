@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.55 161.55">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fcb328;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #57c5c9;
+      }
+
+      .cls-4 {
+        stroke: #010101;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+
+      .cls-4, .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle class="cls-4" cx="80.77" cy="80.77" r="80.52"/>
+  <ellipse class="cls-2" cx="80.77" cy="80.77" rx="80.66" ry="42.58" transform="translate(-33.46 80.77) rotate(-45)"/>
+  <g>
+    <rect class="cls-3" x="51.56" y="66.17" width="53.78" height="49.84"/>
+    <polygon class="cls-3" points="111.02 71.42 45.88 71.42 78.19 42.12 111.02 71.42"/>
+    <rect class="cls-2" x="85.66" y="95.03" width="10.49" height="20.99"/>
+    <rect class="cls-2" x="68.18" y="80.6" width="5.68" height="3.93" transform="translate(142.04 165.13) rotate(180)"/>
+    <rect class="cls-2" x="62.49" y="80.6" width="3.93" height="3.93" transform="translate(128.92 165.13) rotate(180)"/>
+    <rect class="cls-2" x="62.49" y="86.28" width="3.93" height="3.93" transform="translate(128.92 176.5) rotate(180)"/>
+    <rect class="cls-2" x="68.18" y="86.28" width="5.68" height="3.93" transform="translate(142.04 176.5) rotate(180)"/>
+  </g>
+  <g>
+    <rect class="cls-3" x="91.63" y="41.35" width="25.83" height="23.94"/>
+    <polygon class="cls-3" points="120.19 43.87 88.9 43.87 104.42 29.8 120.19 43.87"/>
+    <rect class="cls-2" x="108.01" y="55.21" width="5.04" height="10.08"/>
+    <rect class="cls-2" x="99.61" y="48.28" width="2.73" height="1.89" transform="translate(201.95 98.44) rotate(180)"/>
+    <rect class="cls-2" x="96.88" y="48.28" width="1.89" height="1.89" transform="translate(195.65 98.44) rotate(180)"/>
+    <rect class="cls-2" x="96.88" y="51.01" width="1.89" height="1.89" transform="translate(195.65 103.9) rotate(180)"/>
+    <rect class="cls-2" x="99.61" y="51.01" width="2.73" height="1.89" transform="translate(201.95 103.9) rotate(180)"/>
+  </g>
+  <g>
+    <circle class="cls-1" cx="49.8" cy="24.58" r="14.96"/>
+    <polygon class="cls-1" points="58.29 69.1 56.89 69.45 49.75 44.35 52.09 43.74 58.29 69.1"/>
+    <polygon class="cls-1" points="31.35 67.7 30.12 67.35 36.07 41.97 38.41 42.56 31.35 67.7"/>
+    <polygon class="cls-1" points="80.68 56.68 79.81 57.38 60.93 39.55 62.64 37.84 80.68 56.68"/>
+    <polygon class="cls-1" points="91.35 37.79 91 38.84 66.51 29.83 67.4 27.59 91.35 37.79"/>
+    <polygon class="cls-1" points="94.5 18.19 94.5 19.07 68.42 18.2 68.57 15.79 94.5 18.19"/>
+  </g>
+</svg>
