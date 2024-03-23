@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="sticky fixed-top">
+        <div class="logo">
+            <a href="index.html"><img src="../img/logo.svg" class="logo-header"></a>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-element"><a class="nav-links" href="index.html">HOME</a></li>
+
+                <li class="dropdown-nav">
+                  <div class="properties-dropdown">
+                    <a class="nav-links"role="button" data-bs-toggle="dropdown">
+                      ACCOMODATION
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-menu-item" href="caja-blanca.html"><button class="dropdown-item" type="button">Caja Blanca</button></a></li>
+                      <li><a class="dropdown-menu-item" href=""><button class="dropdown-item" type="button">Otra Casa</button></a></li>
+                      <li><a class="dropdown-menu-item" href=""><button class="dropdown-item" type="button">Otra Casa</button></a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav-element"><a class="nav-links" href="deals.html">DEALS</a></li>
+                <li class="nav-element"><a class="nav-links" href="management.html">MANAGEMENT</a></li>
+                <li class="nav-element"><a class="nav-links" href="about-us.html">ABOUT US</a></li>
+                <li class="nav-element"><a class="nav-links" href="contact.html">CONTACT</a></li>
+
+                <li class="nav-element nav-element-last-child"><a class="nav-links nav-links-last-child" href=""> <img src="../img/bandera-reino-unido.svg" alt="" class="banderas"> </a>
+                 | <a class="nav-links nav-links-last-child" href="index-es.html"> <img src="../img/bandera-españa.avif" alt="" class="banderas"> </a> 
+                 |  <a class="nav-links nav-links-last-child" href="index-da.html"> <img src="../img/bandera-dinamarca.avif" alt="" class="banderas"> </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- phone version -->
+        <div class="btn-group dropdown nav-menu-phone">
+          <a href="#" class="dropdown-item" data-bs-toggle="dropdown"  data-bs-auto-close="outside"> <img src="../vectors/phone-icon-menu.svg" alt="" class="phone-nav-menu-icon"> </a>
+          <ul class="dropdown-menu shadow">
+              <li class="nav-element"><a class="nav-links" href="index.html">HOME</a></li>
+
+              <li class="dropstart">
+                  <a class="nav-links dropdown-item" data-bs-toggle="dropdown" href="#">ACCOMMODATION</a>
+                  <ul class="dropdown-menu dropdown-submenu shadow">
+                      <li class="nav-item">
+                          <a class="nav-link dropdown-item" href="caja-blanca.html">Caja Blanca</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link dropdown-item" href="rosa-villa.html">Rosa Villa</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link dropdown-item" href="marina-del-este.html">Marina Del Este</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="nav-element"><a class="nav-links" href="deals.html">DEALS</a></li>
+              <li class="nav-element"><a class="nav-links" href="management.html">MANAGEMENT</a></li>
+              <li class="nav-element"><a class="nav-links" href="about-us.html">ABOUT US</a></li>
+              <li class="nav-element"><a class="nav-links" href="contact.html">CONTACT</a></li>
+
+              <li class="nav-element nav-element-last-child"><a class="nav-links nav-links-last-child" href="index.html"> <img src="../img/bandera-reino-unido.svg" alt="" class="banderas"> </a>
+                | <a class="nav-links nav-links-last-child" href="index-es.html"> <img src="../img/bandera-españa.avif" alt="" class="banderas"> </a> 
+                |  <a class="nav-links nav-links-last-child" href="index-da.html"> <img src="../img/bandera-dinamarca.avif" alt="" class="banderas"> </a>
+              </li>
+          </ul>
+        </div>
+        
+    </div>
+  </header>
+
+    <main>
+        <div class="caja-blanca-menu-title">
+            <h1 class="caja-blanca-menu-title-homepage">ATALAYA</h1>
+            <div class="caja-blanca-menu-title-homepage-line"></div>
+        </div>
+
+        <div class="welcome-menu-properties-page">
+          <div class="welcome-text-properties-page">
+            <h1 class="welcome-text-properties-page-title">Atalaya</h1>
+            <p class="welcome-text-properties-page-text">Are you looking for a place to spend your holidays in complete privacy and surrounded by luxury
+              and nature? This is your home. This villa is located in a residential area of Mijas Pueblo, completely
+              independent and in a cul-de-sac. Only 15 minutes drive from Mijas Pueblo and Fuengirola, this villa
+              is undoubtedly ideal to unwind, take a dip in the huge swimming pool, sunbathe and relax in the
+              beautifully decorated bedrooms. It consists of a main house and a guest annexe with kitchen. </p>
+          </div>
+
+          <div class="welcome-image-properties-page">
+
+            <div id="carouselExample" class="carousel slide carousel-autoplay">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img-atalaya/Captura de pantalla 2024-01-24 a las 11.48.22.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img-atalaya/Captura de pantalla 2024-01-24 a las 11.49.36.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img-atalaya/Captura de pantalla 2024-01-24 a las 11.51.40.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img-atalaya/Captura de pantalla 2024-01-24 a las 11.47.24.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img-atalaya/Captura de pantalla 2024-01-24 a las 11.48.46.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img-atalaya/Captura de pantalla 2024-01-24 a las 11.50.49.png" class="d-block w-100" alt="...">
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+            
+          </div>
+        </div>
+
+        <div class="caja-blanca-amenities-title">
+          <h1 class="caja-blanca-amenities-title-properties-page">AMENITIES</h1>
+        </div>
+        <div class="caja-blanca-amenities-title-properties-page-line"></div>
+        
+        <div class="amenities-elements">
+          <div class="first-row-amenities-elements">
+            <div class="amenities-item">
+              <img src="../vectors/person.svg" alt="" class="amenities-item-image">
+              <h5> 12 Guests</h5>
+            </div>
+            <div class="amenities-item">
+              <img src="../vectors/sofa.svg" alt="" class="amenities-item-image">
+              <h5> 5 Rooms</h5>
+            </div>
+            <div class="amenities-item">
+              <img src="../vectors/restroom.svg" alt="" class="amenities-item-image">
+              <h5> 7 Toilets</h5>
+            </div>
+            <div class="amenities-item">
+              <img src="../vectors/kitchen.svg" alt="" class="amenities-item-image">
+              <h5> Kitchen</h5>
+            </div>
+          </div>
+
+          <div class="second-row-amenities-elements">
+            <div class="amenities-item">
+              <img src="../vectors/wifi-simbol.svg" alt="" class="amenities-item-image">
+              <h5> Wifi</h5>
+            </div>
+            <div class="amenities-item">
+              <img src="../vectors/termostato.svg" alt="" class="amenities-item-image-special">
+              <h5> Air Conditioning</h5>
+            </div>
+            <div class="amenities-item">
+              <img src="../vectors/washing-machine.svg" alt="" class="amenities-item-image">
+              <h5> Washing Machine</h5>
+            </div>
+            <div class="amenities-item">
+              <img src="../vectors/dishwasher.svg" alt="" class="amenities-item-image">
+              <h5> Dishwasher</h5>
+            </div>
+          </div>
+
+          <div class="third-row-amenities-elements">
+            <div class="amenities-item">
+              <img src="../vectors/washing-machine.svg" alt="" class="amenities-item-image">
+              <h5> Dryer Machine</h5>
+            </div>
+            <div class="amenities-item">
+              <img src="../vectors/hair-dryer.svg" alt="" class="amenities-item-image">
+              <h5> Hair Dryer</h5>
+            </div>
+            <div class="amenities-item">
+              <img src="../vectors/swimming.svg" alt="" class="amenities-item-image">
+              <h5> Pool</h5>
+            </div>
+            <div class="amenities-item">
+              <img src="../vectors/barbecue.svg" alt="" class="amenities-item-image">
+              <h5> Barbecue</h5>
+            </div>
+          </div>
+
+          <div class="fourth-row-amenities-elements">
+            <div class="amenities-item">
+              <img src="../vectors/parking-sign.svg" alt="" class="amenities-item-image">
+              <h5> Parking Lot</h5>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="services-menu-properties-page">
+
+          <div class="caja-blanca-menu-title caja-blanca-menu-title-services">
+            <h1 class="caja-blanca-menu-title-homepage">SERVICES</h1>
+            <div class="caja-blanca-menu-title-homepage-line"></div>
+          </div>
+
+          <div class="services">
+
+            <div class="third-service service-item">
+              <div class="third-service-text service-text-item">
+                <h2 class="third-service-text-title">
+                  CLEANING SERVICE
+                </h2>
+                <p class="third-service-text-text">
+                  We offer a reliable and hassle-free cleaning service that’s ready to plug and play in long term stay.
+                  We take care of the cleaning so you can focus on enjoying the stay.
+                </p>
+                <button type="button" class="btn btn-info btn-services">More information</button>
+              </div>
+              <div class="third-service-image service-image-item">
+                <img src="../img/cleaning-service.jpg" alt="" class="image-services">
+              </div>
+            </div>
+
+            <div class="first-service service-item">
+              <div class="first-service-image service-image-item">
+                <img src="../img/massage.jpg" alt="" class="image-services">
+              </div>
+              <div class="first-service-text service-text-item">
+                <h2 class="first-service-text-title">
+                  SPA AND MASSAGE
+                </h2>
+                <p class="first-service-text-text">
+                  Enjoy a relaxing massage at home in the villa... Are you contracted, very loaded and stressed?...Do
+                  you need a massage to recover your energy... Mercedes de Diego offers a fusion massage: mind,
+                  body and soul. Her massages are decontracting, relaxing, circulatory, and energetic. Benefits:
+                  lowers muscle tone and improves circulation, reduces anxiety and stress.
+                </p>
+                <button type="button" class="btn btn-info btn-services">More information</button>
+              </div>
+            </div>
+
+            <div class="second-service service-item">
+              <div class="second-service-text service-text-item">
+                <h2 class="second-service-text-title">
+                  GOLF MARBELLA
+                </h2>
+                <p class="second-service-text-text">
+                  Costa del Sol is a guaranteed sunshine with some of Europe’s top golf resorts. Searching for a
+                  hotbed for a golfbreaks? You are in the right place. Contact us and enjoy our recommended play
+                  golf packages in Southern Spain where our incredible climate attracts thousands of golfers each
+                  year.
+                </p>
+                <button type="button" class="btn btn-info btn-services">More information</button>
+              </div>
+              <div class="second-service-image service-image-item">
+                <img src="../img/golf.jpg" alt="" class="image-services">
+              </div>
+            </div>
+
+            <div class="fourth-service service-item">
+              <div class="fourth-service-image service-image-item">
+                <img src="../img/chef.jpg" alt="" class="image-services">
+              </div>
+              <div class="fourth-service-text service-text-item">
+                <h2 class="fourth-service-text-title">
+                  PRIVATE CHEF
+                </h2>
+                <p class="fourth-service-text-text">
+                  Imagine having your favorite restaurant with the best chefs without having to leave your home.
+                  What would it be like to have your favorite dishes at home and only worry about enjoying them
+                  with your friends and family?                </p>
+                <button type="button" class="btn btn-info btn-services">More information</button>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+          
+    </main>
+    <footer>
+      <div class="footer-info">
+        <div class="footer-info-contact-info">
+          <div class="footer-info-contact-info-title footer-title">
+          <h3>Contact Information</h3>
+          </div>
+          <p class="footer-text"><a class="footer-links" href="">email@gmail.com </a><br>
+            <a class="footer-links" href="">(+34) 123 456 789 </a><br>
+            <a class="footer-links" href="">Whatsapp </a><br>
+            <a class="footer-links" href="">Instagram </a><br>
+            <a class="footer-links" href="">Facebook </a><br>
+          </p>
+        </div>
+        <div class="footer-info-payments-info">
+          <div class="footer-info-payments-info-title footer-title">
+          <h3>Payments Methods</h3>
+          </div>
+          <p class="footer-text"><a class="footer-links" href="">Bank Transfer </a><br>
+            <a class="footer-links" href="">Credit/ Debit </a><br>
+          </p>
+        </div>
+        <div class="footer-info-privacity-info">
+          <div class="footer-info-privacity-info-title footer-title">
+          <h3>Privacity Information</h3>
+          </div>
+          <p class="footer-text"><a class="footer-links" href="">Use of Cookies</a><br>
+            <a class="footer-links" href="">Conditions of Use</a><br>
+          </p>
+        </div>
+        <div class="footer-info-logo">
+          <img src="../img/logo.svg" alt="" class="footer-info-logo-image">
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
