@@ -1075,15 +1075,8 @@
     }
 
     .management-title{
-        position: absolute;
-        top: 30%;
-        left: 50%;
         margin-top: -68px;
         margin-left: -171px;
-        padding: 10px;
-        z-index: 1;
-        font-size: 20px;
-        color: rgb(255, 255, 255);
         .management-title-text{
             margin-bottom: 20px;
             font-size: 30px;
@@ -1093,10 +1086,8 @@
         }
         .btn.btn-info.btn.btn-management-title-responsive{
             display: block;
-            color: white;
             transform: translateX(100%);
         }
-        
     }
     .management-our-services-menu-title{
         margin-top: 40px;
@@ -1249,6 +1240,7 @@
         width: 150px;
         margin: 0 auto 35px auto;
     } 
+    
     //management page
     .management-background-image{
         margin-top: 80px;
@@ -1270,28 +1262,15 @@
         }
     }
     .management-title{
-        position: absolute;
-        top: 30%;
-        left: 50%;
         margin-top: -68px;
         margin-left: -117px;
-        padding: 10px;
-        z-index: 1;
-        font-size: 20px;
-        color: rgb(255, 255, 255);
         .management-title-text{
             margin-bottom: 20px;
             font-size: 20px;
         }
-        .btn-management-title{
-            display: none;
-        }
         .btn.btn-info.btn.btn-management-title-responsive{
-            display: block;
-            color: white;
             transform: translateX(50%);
         }
-        
     }
     .management-our-services-content-text-decription-title{
         font-size: 25px;

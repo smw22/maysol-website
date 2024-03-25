@@ -12817,15 +12817,8 @@ textarea.form-control-lg {
     width: 90%;
   }
   .management-title {
-    position: absolute;
-    top: 30%;
-    left: 50%;
     margin-top: -68px;
     margin-left: -171px;
-    padding: 10px;
-    z-index: 1;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
   }
   .management-title .management-title-text {
     margin-bottom: 20px;
@@ -12836,7 +12829,6 @@ textarea.form-control-lg {
   }
   .management-title .btn.btn-info.btn.btn-management-title-responsive {
     display: block;
-    color: white;
     transform: translateX(100%);
   }
   .management-our-services-menu-title {
@@ -12957,26 +12949,14 @@ textarea.form-control-lg {
     align-items: center;
   }
   .management-title {
-    position: absolute;
-    top: 30%;
-    left: 50%;
     margin-top: -68px;
     margin-left: -117px;
-    padding: 10px;
-    z-index: 1;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
   }
   .management-title .management-title-text {
     margin-bottom: 20px;
     font-size: 20px;
   }
-  .management-title .btn-management-title {
-    display: none;
-  }
   .management-title .btn.btn-info.btn.btn-management-title-responsive {
-    display: block;
-    color: white;
     transform: translateX(50%);
   }
   .management-our-services-content-text-decription-title {
