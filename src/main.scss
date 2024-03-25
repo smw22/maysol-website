@@ -20,10 +20,10 @@
     justify-content: center;
     gap: 200px;
     .logo{
-        padding: 10px;
+        padding: 15px 10px;
     }
     .logo-header{
-        height: 100px;
+        height: 90px;
     }
     .nav-list{
         display: flex;
@@ -103,12 +103,18 @@
 .carousel-fade{
     width: 100%;
 }
+
+.carousel-inner{
+    height: 95vh;
+}
+
+
 .carousel-item-homepage{
     margin-top: 120px;
-    height: 85vh;
+    height: auto;
     width: 100%;
     .carousel-caption{
-        bottom: 40%;
+        bottom: 50%;
     }
     .carousel-homepage-property-title{
         font-size: 60px;
@@ -126,6 +132,9 @@
         background-position: center !important;
         background-attachment: fixed !important;
         background-size: cover !important;
+        height: 90vh;
+        object-fit: cover;
+        object-position: center center;
     }
 
 }
@@ -359,44 +368,62 @@
     }
 }
 
-
 .welcome-menu-properties-page{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 15px auto;
-    width: 75%;
-    max-width: 1250px;
+    display: flex;
+    align-items: center;    
     justify-content: center;
+    gap: 50px;
+    width: 85%;
     .welcome-text-properties-page{
-        width: 100%;
-        height: fit-content;
-        z-index: 2;
-        padding: 0 30px 10px 30px;
-        box-shadow: 1px 1px 5px #000000;
-        background-color: white;
-        grid-column: 1 / 3;
-        .welcome-text-properties-page-title{
-            text-align: center;
-            padding: 15px 15px 10px 15px;
-            font-family: 'Roboto Slab', serif !important;
-        }
+        width: 500px;
     }
-
     .welcome-image-properties-page{
-        width: 100%;
-        z-index: 1;
-        border-radius: 25px;
-        grid-column: 2 / -1;
-        margin-top: 75px;
-        height: 600px;
+        width: 500px;
         .welcome-image-properties-page-image{
             width: 100%;
-            border-radius: 25px;
         }
     }
-    .welcome-text-properties-page, .welcome-image-properties-page{
-        grid-row: 1 / 2;
-    }
+}
+// .welcome-menu-properties-page{
+//     display: grid;
+//     grid-template-columns: repeat(7, 1fr);
+//     margin: 15px auto;
+//     width: 75%;
+//     max-width: 1250px;
+//     justify-content: center;
+//     .welcome-text-properties-page{
+//         width: 100%;
+//         height: fit-content;
+//         z-index: 2;
+//         padding: 0 30px 10px 30px;
+//         box-shadow: 1px 1px 5px #000000;
+//         background-color: white;
+//         grid-column: 1 / 3;
+//         .welcome-text-properties-page-title{
+//             text-align: center;
+//             padding: 15px 15px 10px 15px;
+//             font-family: 'Roboto Slab', serif !important;
+//         }
+//     }
+
+//     .welcome-image-properties-page{
+//         width: 100%;
+//         z-index: 1;
+//         grid-column: 2 / -1;
+//         margin-top: 75px;
+//         height: 600px;
+//         .welcome-image-properties-page-image{
+//             width: 100%;
+//             border-radius: 25px;
+//         }
+//     }
+//     .welcome-text-properties-page, .welcome-image-properties-page{
+//         grid-row: 1 / 2;
+//     }
+// }
+
+.carousel-inner.carousel-inner-properties{
+    height: 600px;
 }
 
 
@@ -691,9 +718,10 @@
 .about-us-background-image{
     height: auto;
     width: 100%;
-    background-color: #000;
+    background-color: rgba(0,0,0,0.8);
+    margin-top: 120px;
     .about-us-background-image-image{
-        height: 550px;
+        height: 450px;
         width: 100%;
         opacity: 0.5;
         object-fit: cover;
@@ -704,13 +732,13 @@
 .about-us-information{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 75px;
     margin-bottom: 75px;
-    align-items: center;
     gap: 150px;
     .about-us-information-text{
-        width: 400px;
+        width: 500px;
         .about-us-information-text-title{
             font-family: 'Roboto Slab', serif !important;
         }
@@ -719,7 +747,7 @@
         width: 400px;
         height: 500px;
         border-radius: 50px;
-        background-color: azure;
+        background-color: rgb(223, 255, 255);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -732,6 +760,9 @@
         .about-us-information-image-title{
             font-family: 'Roboto Slab', serif !important;
             padding-top: 20px;
+        }
+        .about-us-information-image-subtitle{
+            margin-bottom: 0;
         }
     }
 }
@@ -762,10 +793,11 @@
     height: auto;
     width: 100%;
     background-color: #000;
+    margin-top: 120px;
     .contact-background-image-image{
         width: 100%;
         opacity: 0.5;
-        height: 535px;
+        height: 450px;
         object-fit: cover;
         object-position: center center;
 
@@ -780,7 +812,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 150px 0;
+        padding: 125px 0;
         .contact-icon{
             width: 100px;
             height: 100px;
@@ -829,18 +861,18 @@
         width: 1000px;
     }
 
-    .welcome-menu-properties-page{
-        width: 1200px;
-        height: 500px;
-    }
+    // .welcome-menu-properties-page{
+    //     width: 1200px;
+    //     height: 500px;
+    // }
 
     .properties-menu-images{
         width: 95%;
     }
 
-    .welcome-menu-properties-page .welcome-image-properties-page {
-        margin-top: 100px;
-    }
+    // .welcome-menu-properties-page .welcome-image-properties-page {
+    //     margin-top: 125px;
+    // }
 
     .caja-blanca-menu-title{
         width: 300px;
@@ -879,14 +911,13 @@
     .sticky{
         justify-content: space-around;
         height: 100px;
-    }
-
-    .sticky .logo{
-        padding: 13px;
-    }
-
-    .sticky .logo-header{
-        height: 75px;
+        gap: 0;
+        .logo{
+            padding: 10px;
+        }
+        .logo-header{
+            height: 80px;
+        }
     }
 
     .dropdown-menu-phone{
@@ -912,19 +943,19 @@
     }
 
     //
+    
+    .carousel-inner{
+        height: 95vh;
+    }
 
     .carousel-item-homepage {
         height: auto; /* Set height to auto for mobile devices */
         width: 100%;
-        margin-top: 0px;
+        margin-top: 100px;
     }
 
-    .carousel-fade {
-        margin-top: 120px;
-    }
-
-    .carousel-caption{
-        bottom: 25% !important; 
+    .carousel-image-homepage{
+        height: 50vh;
     }
 
     .welcome-menu-homepage {
@@ -934,6 +965,7 @@
     }
 
     //
+
     .welcome-text-homepage{
         height: auto;
         margin-bottom: 25px;
@@ -971,6 +1003,9 @@
         display: block;
         height: auto;
         width: 100%;
+        .footer-info-logo-image{
+            height: 90px;
+        }
     }
 
 // Properties pages
@@ -980,6 +1015,9 @@
         flex-direction: column;
         grid-template-columns: repeat(2, 1fr);
         width: 90%;
+        height: auto;
+    }
+    .carousel-inner.carousel-inner-properties{
         height: auto;
     }
     .welcome-menu-properties-page .welcome-image-properties-page{
@@ -1020,8 +1058,17 @@
     }
 
 //Contact page
+
     .contact-background-image{
         margin-top: 100px;
+        .contact-background-image-image{
+            width: 100%;
+            opacity: 0.5;
+            height: 346px;
+            object-fit: cover;
+            object-position: center center;
+    
+        }
     }
 
     .contact-information{
@@ -1035,11 +1082,20 @@
     .about-us-background-image{
         height: auto;
         margin-top: 100px;
+        .about-us-background-image-image{
+            height: 474px;
+            width: 100%;
+            opacity: 0.5;
+            object-fit: cover;
+            object-position: center center;
+        }
     }
+
     .about-us-information{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100%;
         margin-top: 50px;
         margin-bottom: 20px;
@@ -1049,13 +1105,9 @@
         }
         .about-us-information-image{
             width: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             .foto-mama{
-                margin-top: 75px;
-                width: 50%;
-                height: fit-content;
+                height: 200px;
+                width: 200px;
             }
         }
     }
@@ -1176,12 +1228,13 @@
     .sticky{
         justify-content: space-around;
         height: 80px;
+        .logo{
+            padding: 10px;
+        }
+        .logo-header{
+            height: 60px;
+        }
     }
-
-    .sticky .logo-header{
-        height: 60px;
-    }
-
     .phone-nav-menu-icon{
         width: 30px;
         margin-top: 5px;
@@ -1190,20 +1243,14 @@
     .carousel-item-homepage {
         height: auto; /* Set height to auto for mobile devices */
         width: 100%;
-    }
-
-    .carousel-fade {
         margin-top: 80px;
     }
-
     .carousel-item-homepage .carousel-caption .carousel-homepage-property-title {
         font-size: 26px;
     }
-
     .carousel-item-homepage .carousel-homepage-property-price {
         font-size: 18px;
     }
-
     .around-carousel-icon-square {
         width: 40px;
         height: 40px;
@@ -1211,27 +1258,19 @@
         padding-top: 12px;
         border-radius: 4px;
     }
-
     .carousel-control-next-icon, .carousel-control-prev-icon{
         width: 20px;
         height: 20px;
     }
-
     .carousel-item-homepage .btn-info {
         width: 110px;
         height: fit-content;
         font-size: 12px;
         padding: 5px;
     }
-
-    .carousel-caption{
-        bottom: 15% !important; 
-    }
-
     .about-us-background-image{
         margin-top: 80px;
     }
-
     .contact-background-image{
         margin-top: 80px;
     }

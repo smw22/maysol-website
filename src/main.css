@@ -11992,10 +11992,10 @@ textarea.form-control-lg {
   gap: 200px;
 }
 .sticky .logo {
-  padding: 10px;
+  padding: 15px 10px;
 }
 .sticky .logo-header {
-  height: 100px;
+  height: 90px;
 }
 .sticky .nav-list {
   display: flex;
@@ -12070,13 +12070,17 @@ textarea.form-control-lg {
   width: 100%;
 }
 
+.carousel-inner {
+  height: 95vh;
+}
+
 .carousel-item-homepage {
   margin-top: 120px;
-  height: 85vh;
+  height: auto;
   width: 100%;
 }
 .carousel-item-homepage .carousel-caption {
-  bottom: 40%;
+  bottom: 50%;
 }
 .carousel-item-homepage .carousel-homepage-property-title {
   font-size: 60px;
@@ -12094,6 +12098,11 @@ textarea.form-control-lg {
   background-position: center !important;
   background-attachment: fixed !important;
   background-size: cover !important;
+  height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 .around-carousel-icon-square {
@@ -12264,42 +12273,24 @@ textarea.form-control-lg {
 }
 
 .welcome-menu-properties-page {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin: 15px auto;
-  width: 75%;
-  max-width: 1250px;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 50px;
+  width: 85%;
 }
 .welcome-menu-properties-page .welcome-text-properties-page {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  z-index: 2;
-  padding: 0 30px 10px 30px;
-  box-shadow: 1px 1px 5px #000000;
-  background-color: white;
-  grid-column: 1/3;
-}
-.welcome-menu-properties-page .welcome-text-properties-page .welcome-text-properties-page-title {
-  text-align: center;
-  padding: 15px 15px 10px 15px;
-  font-family: "Roboto Slab", serif !important;
+  width: 500px;
 }
 .welcome-menu-properties-page .welcome-image-properties-page {
-  width: 100%;
-  z-index: 1;
-  border-radius: 25px;
-  grid-column: 2/-1;
-  margin-top: 75px;
-  height: 600px;
+  width: 500px;
 }
 .welcome-menu-properties-page .welcome-image-properties-page .welcome-image-properties-page-image {
   width: 100%;
-  border-radius: 25px;
 }
-.welcome-menu-properties-page .welcome-text-properties-page, .welcome-menu-properties-page .welcome-image-properties-page {
-  grid-row: 1/2;
+
+.carousel-inner.carousel-inner-properties {
+  height: 600px;
 }
 
 .caja-blanca-amenities-title {
@@ -12524,10 +12515,11 @@ textarea.form-control-lg {
 .about-us-background-image {
   height: auto;
   width: 100%;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 120px;
 }
 .about-us-background-image .about-us-background-image-image {
-  height: 550px;
+  height: 450px;
   width: 100%;
   opacity: 0.5;
   -o-object-fit: cover;
@@ -12539,14 +12531,14 @@ textarea.form-control-lg {
 .about-us-information {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   margin-top: 75px;
   margin-bottom: 75px;
-  align-items: center;
   gap: 150px;
 }
 .about-us-information .about-us-information-text {
-  width: 400px;
+  width: 500px;
 }
 .about-us-information .about-us-information-text .about-us-information-text-title {
   font-family: "Roboto Slab", serif !important;
@@ -12555,7 +12547,7 @@ textarea.form-control-lg {
   width: 400px;
   height: 500px;
   border-radius: 50px;
-  background-color: azure;
+  background-color: rgb(223, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12571,16 +12563,20 @@ textarea.form-control-lg {
   font-family: "Roboto Slab", serif !important;
   padding-top: 20px;
 }
+.about-us-information .about-us-information-image .about-us-information-image-subtitle {
+  margin-bottom: 0;
+}
 
 .contact-background-image {
   height: auto;
   width: 100%;
   background-color: #000;
+  margin-top: 120px;
 }
 .contact-background-image .contact-background-image-image {
   width: 100%;
   opacity: 0.5;
-  height: 535px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
@@ -12596,7 +12592,7 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 150px 0;
+  padding: 125px 0;
 }
 .contact-information .contact-item .contact-icon {
   width: 100px;
@@ -12624,15 +12620,8 @@ textarea.form-control-lg {
   .welcome-menu-homepage {
     width: 1000px;
   }
-  .welcome-menu-properties-page {
-    width: 1200px;
-    height: 500px;
-  }
   .properties-menu-images {
     width: 95%;
-  }
-  .welcome-menu-properties-page .welcome-image-properties-page {
-    margin-top: 100px;
   }
   .caja-blanca-menu-title {
     width: 300px;
@@ -12648,12 +12637,13 @@ textarea.form-control-lg {
   .sticky {
     justify-content: space-around;
     height: 100px;
+    gap: 0;
   }
   .sticky .logo {
-    padding: 13px;
+    padding: 10px;
   }
   .sticky .logo-header {
-    height: 75px;
+    height: 80px;
   }
   .dropdown-menu-phone {
     border: 0;
@@ -12673,16 +12663,16 @@ textarea.form-control-lg {
   a.dropdown-item.nav-links {
     padding-left: 0;
   }
+  .carousel-inner {
+    height: 95vh;
+  }
   .carousel-item-homepage {
     height: auto; /* Set height to auto for mobile devices */
     width: 100%;
-    margin-top: 0px;
+    margin-top: 100px;
   }
-  .carousel-fade {
-    margin-top: 120px;
-  }
-  .carousel-caption {
-    bottom: 25% !important;
+  .carousel-image-homepage {
+    height: 50vh;
   }
   .welcome-menu-homepage {
     grid-template-columns: repeat(2, 1fr); /* Change to two columns for screens smaller than 768px */
@@ -12722,12 +12712,18 @@ textarea.form-control-lg {
     height: auto;
     width: 100%;
   }
+  .footer-info .footer-info-logo-image {
+    height: 90px;
+  }
   .welcome-menu-properties-page {
     display: block;
     display: flex;
     flex-direction: column;
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
+    height: auto;
+  }
+  .carousel-inner.carousel-inner-properties {
     height: auto;
   }
   .welcome-menu-properties-page .welcome-image-properties-page {
@@ -12769,6 +12765,15 @@ textarea.form-control-lg {
   .contact-background-image {
     margin-top: 100px;
   }
+  .contact-background-image .contact-background-image-image {
+    width: 100%;
+    opacity: 0.5;
+    height: 346px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
   .contact-information {
     flex-direction: column;
   }
@@ -12779,10 +12784,20 @@ textarea.form-control-lg {
     height: auto;
     margin-top: 100px;
   }
+  .about-us-background-image .about-us-background-image-image {
+    height: 474px;
+    width: 100%;
+    opacity: 0.5;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
   .about-us-information {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -12793,15 +12808,10 @@ textarea.form-control-lg {
   }
   .about-us-information .about-us-information-image {
     width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .about-us-information .about-us-information-image .foto-mama {
-    margin-top: 75px;
-    width: 50%;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 200px;
+    width: 200px;
   }
   .management-background-image {
     margin-top: 100px;
@@ -12878,6 +12888,9 @@ textarea.form-control-lg {
     justify-content: space-around;
     height: 80px;
   }
+  .sticky .logo {
+    padding: 10px;
+  }
   .sticky .logo-header {
     height: 60px;
   }
@@ -12888,8 +12901,6 @@ textarea.form-control-lg {
   .carousel-item-homepage {
     height: auto; /* Set height to auto for mobile devices */
     width: 100%;
-  }
-  .carousel-fade {
     margin-top: 80px;
   }
   .carousel-item-homepage .carousel-caption .carousel-homepage-property-title {
@@ -12915,9 +12926,6 @@ textarea.form-control-lg {
     height: fit-content;
     font-size: 12px;
     padding: 5px;
-  }
-  .carousel-caption {
-    bottom: 15% !important;
   }
   .about-us-background-image {
     margin-top: 80px;
