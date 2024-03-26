@@ -12273,22 +12273,18 @@ textarea.form-control-lg {
 }
 
 .welcome-menu-properties-page {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  margin: 15px auto;
-  width: 75%;
-  max-width: 1250px;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 50px;
 }
 .welcome-menu-properties-page .welcome-text-properties-page {
-  width: 100%;
+  width: 333px;
   height: -moz-fit-content;
   height: fit-content;
-  z-index: 2;
   padding: 0 30px 10px 30px;
   box-shadow: 1px 1px 5px #000000;
   background-color: white;
-  grid-column: 1/3;
 }
 .welcome-menu-properties-page .welcome-text-properties-page .welcome-text-properties-page-title {
   text-align: center;
@@ -12296,22 +12292,16 @@ textarea.form-control-lg {
   font-family: "Roboto Slab", serif !important;
 }
 .welcome-menu-properties-page .welcome-image-properties-page {
-  width: 100%;
-  z-index: 1;
-  grid-column: 2/-1;
-  margin-top: 75px;
-  height: 600px;
+  width: 800px;
+  display: flex;
+  align-items: center;
 }
-.welcome-menu-properties-page .welcome-image-properties-page .welcome-image-properties-page-image {
+.welcome-menu-properties-page .welcome-image-properties-page .properties-carousel-image {
   width: 100%;
-  border-radius: 25px;
-}
-.welcome-menu-properties-page .welcome-text-properties-page, .welcome-menu-properties-page .welcome-image-properties-page {
-  grid-row: 1/2;
 }
 
 .carousel-inner.carousel-inner-properties {
-  height: 600px;
+  height: 500px;
 }
 
 .caja-blanca-amenities-title {
@@ -12495,42 +12485,65 @@ textarea.form-control-lg {
 }
 
 .deals-menu {
+  display: grid;
+  grid-gap: 20px;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: repeat(10, 1fr);
+  margin-bottom: 50px;
+}
+.deals-menu .deals {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
-  margin-bottom: 50px;
-  flex-wrap: wrap;
-  width: 90%;
-  margin: 0 auto 50px auto;
+  transition: 0.3s;
 }
-.deals-menu .card-deals {
-  height: auto;
-  width: auto;
-}
-.deals-menu .card-deals .card-image-deals {
-  height: 25rem;
-}
-
-.last-minute-deals {
+.deals-menu .deals .image-deals {
+  height: 100%;
   width: 100%;
-  margin: auto;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px 5px 0 0;
 }
-.last-minute-deals .last-minute-card-deals {
-  height: auto;
-  width: auto;
+.deals-menu .deals .deals-text {
+  width: 100%;
+  box-shadow: 1px 1px 5px #000000;
+  padding: 15px;
+  border-radius: 0 0 5px 5px;
 }
-.last-minute-deals .last-minute-deals-row {
-  gap: 50px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.deals-menu .deals .deals-text .card-title {
+  padding: 5px 0 10px 0;
+  font-family: "Roboto Slab", serif !important;
 }
-.last-minute-deals .last-minute-card-image-deals {
-  height: 400px;
-  width: auto;
+.deals-menu .deals:hover {
+  scale: 105%;
+}
+.deals-menu .deals-link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.deals-menu .deal-chef {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+}
+.deals-menu .deal-golf {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.deals-menu .deal-massage {
+  grid-column-start: 5;
+  grid-column-end: 11;
+  grid-row-start: 1;
+}
+.deals-menu .deal-yoga {
+  grid-column-start: 5;
+  grid-column-end: 8;
+}
+.deals-menu .deal-water-activities {
+  grid-column-start: 8;
+  grid-column-end: 11;
 }
 
 .about-us-background-image {
@@ -12737,12 +12750,9 @@ textarea.form-control-lg {
     height: 90px;
   }
   .welcome-menu-properties-page {
-    display: block;
-    display: flex;
     flex-direction: column;
-    grid-template-columns: repeat(2, 1fr);
-    width: 90%;
     height: auto;
+    gap: 20px;
   }
   .carousel-inner.carousel-inner-properties {
     height: auto;
@@ -12751,10 +12761,12 @@ textarea.form-control-lg {
     margin-top: 0;
     margin-bottom: 20px;
     height: auto;
+    width: 90%;
     order: 1;
   }
   .welcome-menu-properties-page .welcome-text-properties-page {
     order: 2;
+    width: 90%;
   }
   .caja-blanca-amenities-title {
     margin-top: 50px;
