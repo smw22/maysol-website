@@ -12471,6 +12471,7 @@ textarea.form-control-lg {
 .management-title.deals-image-title {
   width: auto;
   margin-left: -150px;
+  top: 45%;
 }
 .management-title.deals-image-title .deals-title-text {
   transform: translateX(15%);
