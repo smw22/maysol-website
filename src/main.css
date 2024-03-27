@@ -12429,25 +12429,32 @@ textarea.form-control-lg {
 
 .management-our-services-content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
   gap: 40px;
 }
 .management-our-services-content .management-our-services-content-text {
-  width: 600px;
-  box-shadow: 1px 1px 5px #000000;
-  padding: 15px;
+  width: 1200px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.management-our-services-content .management-our-services-content-text .button-management {
+  align-self: center;
+  justify-self: center;
+  margin-top: 10px;
 }
 .management-our-services-content .management-our-services-content-images {
-  width: 600px;
+  width: 1200px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 .management-our-services-content .management-our-services-content-images .card {
-  box-shadow: 1px 1px 5px #000000;
-  width: 18rem;
+  width: 16rem;
 }
 .management-our-services-content .management-our-services-content-images .card .card-img-top {
   height: 165px;
@@ -12476,7 +12483,7 @@ textarea.form-control-lg {
 }
 
 .management-our-services-menu-title {
-  margin-bottom: 50px;
+  margin-bottom: 0;
   margin-top: 75px;
 }
 
