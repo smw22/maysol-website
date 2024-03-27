@@ -145,8 +145,13 @@
     width:  75px;
     height: 75px;
     bottom: 5px;
-    padding-top: 20px;
+    padding-top: 15px;
     border-radius: 4px;
+    span{
+        color: #ffffff;
+        width: 3rem;
+        height: 3rem;
+    }
 }
 
 .welcome-menu-homepage{
@@ -396,46 +401,19 @@
     }
 }
 
-// .welcome-menu-properties-page{
-//     display: grid;
-//     grid-template-columns: repeat(7, 1fr);
-//     margin: 15px auto;
-//     width: 75%;
-//     max-width: 1250px;
-//     justify-content: center;
-//     .welcome-text-properties-page{
-//         width: 100%;
-//         height: fit-content;
-//         z-index: 2;
-//         padding: 0 30px 10px 30px;
-//         box-shadow: 1px 1px 5px #000000;
-//         background-color: white;
-//         grid-column: 1 / 3;
-//         .welcome-text-properties-page-title{
-//             text-align: center;
-//             padding: 15px 15px 10px 15px;
-//             font-family: 'Roboto Slab', serif !important;
-//         }
-//     }
-
-//     .welcome-image-properties-page{
-//         width: 100%;
-//         z-index: 1;
-//         grid-column: 2 / -1;
-//         margin-top: 75px;
-//         height: 600px;
-//         .welcome-image-properties-page-image{
-//             width: 100%;
-//             border-radius: 25px;
-//         }
-//     }
-//     .welcome-text-properties-page, .welcome-image-properties-page{
-//         grid-row: 1 / 2;
-//     }
-// }
-
 .carousel-inner.carousel-inner-properties{
     height: 500px;
+}
+
+.properties-important-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 5px #000000;
+    padding: 15px;
+    font-family: 'Roboto Slab', serif !important;
 }
 
 .caja-blanca-amenities-title{
@@ -538,7 +516,7 @@
     margin-top: 120px;
     width: 100%;
     .management-background-image-image{
-        height: 775px;
+        height: 500px;
         width: 100%;
         object-fit: cover;
         object-position: center center;
@@ -572,22 +550,49 @@
 .management-our-services-content{
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     gap: 40px;
     .management-our-services-content-text{
-        width: 625px;
+        width: 600px;
+        box-shadow: 1px 1px 5px #000000;
+        padding: 15px;
+        border-radius: 5px;
     }
     .management-our-services-content-images{
-        width: 625px;
+        width: 600px;
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        .card{
+            box-shadow: 1px 1px 5px #000000;
+            width: 18rem;
+            .card-img-top{
+                height: 165px;
+            }
+        }
+    }
+}
+.management-ideas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1230px;
+    margin: 0 auto 50px auto;
+    .management-ideas-text{
+        box-shadow: 1px 1px 5px #000000;
+        padding: 15px;
+        border-radius: 0 5px 5px 0;
+    }
+    .management-ideas-image{
+        width: 100%;
+        border-radius: 5px 0 0 5px;
+        object-fit: cover;
+        object-position: center center;
     }
 }
 
-.card-img-top{
-    height: 165px;
-}
+
 .management-our-services-menu-title{
     margin-bottom: 50px;
     margin-top: 75px;
@@ -1064,6 +1069,9 @@
         order: 2;
         width: 90%;
     }
+    .properties-important-info{
+        width: 90%;
+    }
     .caja-blanca-amenities-title{
         margin-top: 50px;
     }
@@ -1180,6 +1188,19 @@
         margin-top: 40px;
         margin-bottom: 0;
     }
+    .management-ideas{
+        width: 90%;
+        flex-direction: column;
+        .management-ideas-text{
+            box-shadow: 1px 1px 5px #000000;
+            padding: 15px;
+            border-radius: 0 5px 5px 0;
+        }
+        .management-ideas-image{
+            width: 100%;
+            border-radius: 5px 0 0 5px;
+        }
+    }
 
 //Deals Page
     .deals-menu{
@@ -1287,10 +1308,9 @@
         font-size: 18px;
     }
     .around-carousel-icon-square {
-        width: 40px;
-        height: 40px;
         bottom: 0;
         padding-top: 12px;
+        margin: 0 10px;
         border-radius: 4px;
     }
     .carousel-control-next-icon, .carousel-control-prev-icon{
@@ -1314,7 +1334,9 @@
         width: 150px;
         margin: 0 auto 35px auto;
     } 
-    
+    .properties-important-info{
+        flex-direction: column;
+    }
     //management page
     .management-background-image{
         margin-top: 80px;
@@ -1333,6 +1355,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            .card{
+                width: 90% !important;
+        
+                .card-image{
+                    height: auto;
+                }
+            }
         }
     }
     .management-title{
