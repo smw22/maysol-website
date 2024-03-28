@@ -12393,6 +12393,7 @@ textarea.form-control-lg {
   height: auto;
   margin-top: 120px;
   width: 100%;
+  position: relative;
 }
 .management-background-image .management-background-image-image {
   height: 500px;
@@ -12402,29 +12403,18 @@ textarea.form-control-lg {
   -o-object-position: center center;
      object-position: center center;
 }
-
-.management-title {
+.management-background-image .management-title {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
-  margin-top: -68px;
-  margin-left: -225px;
+  transform: translate(-50%, -50%);
   padding: 10px;
   z-index: 1;
   font-size: 20px;
   color: rgb(255, 255, 255);
 }
-.management-title .management-title-text {
+.management-background-image .management-title .management-title-text {
   margin-bottom: 20px;
-}
-.management-title .btn-management-title {
-  width: 200px;
-  color: white;
-  transform: translateX(50%);
-}
-.management-title .btn.btn-info.btn.btn-management-title-responsive {
-  display: none;
-  color: white;
 }
 
 .management-our-services-content {
@@ -12456,31 +12446,6 @@ textarea.form-control-lg {
 .management-our-services-content .management-our-services-content-images .card {
   width: 16rem;
 }
-.management-our-services-content .management-our-services-content-images .card .card-img-top {
-  height: 165px;
-}
-
-.management-ideas {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 1230px;
-  margin: 0 auto 50px auto;
-}
-.management-ideas .management-ideas-text {
-  box-shadow: 1px 1px 5px #000000;
-  padding: 15px;
-  border-radius: 0 5px 5px 0;
-}
-.management-ideas .management-ideas-image {
-  width: 100%;
-  border-radius: 5px 0 0 5px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
-}
 
 .management-our-services-menu-title {
   margin-bottom: 0;
@@ -12500,6 +12465,7 @@ textarea.form-control-lg {
   height: auto;
   margin-top: 120px;
   width: 100%;
+  position: relative;
 }
 .deals-background-image .deals-background-image-image {
   height: 490px;
@@ -12509,31 +12475,24 @@ textarea.form-control-lg {
   -o-object-position: center center;
      object-position: center center;
 }
+.deals-background-image .management-title.deals-image-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  z-index: 1;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.deals-background-image .management-title.deals-image-title .btn-deals-title-responsive {
+  display: none;
+}
 
-.caja-blanca-menu-title.caja-blanca-menu-title-services.deals-menu-title {
+.deals-menu-title {
   margin-top: 50px;
   width: 600px;
-}
-
-.caja-blanca-menu-title.caja-blanca-menu-title-services.last-minute-deals-menu-title {
-  width: 500px;
-}
-
-.management-title.deals-image-title {
-  width: auto;
-  margin-left: -150px;
-  top: 45%;
-}
-.management-title.deals-image-title .deals-title-text {
-  transform: translateX(15%);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.management-title.deals-image-title .btn-deals-title {
-  transform: translateX(19%);
-}
-.management-title.deals-image-title .btn.btn-info.btn.btn-management-title.btn-deals-title-responsive {
-  display: none;
 }
 
 .deals-menu {
@@ -12579,23 +12538,29 @@ textarea.form-control-lg {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
+  align-self: flex-start;
 }
 .deals-menu .deal-golf {
   grid-column-start: 1;
   grid-column-end: 5;
+  grid-row-start: 2;
+  align-self: flex-start;
 }
 .deals-menu .deal-massage {
   grid-column-start: 5;
   grid-column-end: 11;
   grid-row-start: 1;
+  align-self: flex-start;
 }
 .deals-menu .deal-yoga {
   grid-column-start: 5;
   grid-column-end: 8;
+  align-self: flex-start;
 }
 .deals-menu .deal-water-activities {
   grid-column-start: 8;
   grid-column-end: 11;
+  align-self: flex-start;
 }
 
 .about-us-background-image {
@@ -12711,9 +12676,6 @@ textarea.form-control-lg {
   }
   .caja-blanca-menu-title {
     width: 300px;
-  }
-  .caja-blanca-amenities-title {
-    margin-top: 300px;
   }
   .properties-menu-title-homepage-line {
     width: 20%;
@@ -12904,77 +12866,18 @@ textarea.form-control-lg {
   .management-background-image {
     margin-top: 100px;
   }
-  .management-our-services-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  .management-our-services-content .management-our-services-content-images {
+    width: 90%;
   }
   .management-our-services-content .management-our-services-content-text {
     width: 90%;
-  }
-  .management-title {
-    margin-top: -68px;
-    margin-left: -171px;
-  }
-  .management-title .management-title-text {
-    margin-bottom: 20px;
-    font-size: 30px;
-  }
-  .management-title .btn-management-title {
-    display: none;
-  }
-  .management-title .btn.btn-info.btn.btn-management-title-responsive {
-    display: block;
-    transform: translateX(100%);
-  }
-  .management-our-services-menu-title {
-    margin-top: 40px;
-    margin-bottom: 0;
-  }
-  .management-ideas {
-    width: 90%;
-    flex-direction: column;
-  }
-  .management-ideas .management-ideas-text {
-    box-shadow: 1px 1px 5px #000000;
-    padding: 15px;
-    border-radius: 0 5px 5px 0;
-  }
-  .management-ideas .management-ideas-image {
-    width: 100%;
-    border-radius: 5px 0 0 5px;
   }
   .deals-menu {
     display: flex;
     flex-direction: column;
   }
-  .caja-blanca-menu-title.caja-blanca-menu-title-services.deals-menu-title {
-    margin-top: 50px;
-    width: 200px;
-  }
-  .btn.btn-info.btn.btn-management-title.btn-deals-title {
-    transform: translateX(75%);
-  }
   .caja-blanca-menu-title-homepage.deals-title {
     font-size: 25px;
-  }
-  .management-title.deals-image-title {
-    margin-left: -116px;
-    width: 200px;
-  }
-  .management-title.deals-image-title .deals-title-text {
-    transform: translateX(5%);
-  }
-  .management-title.deals-image-title .btn-deals-title {
-    display: none;
-  }
-  .management-title.deals-image-title .btn.btn-info.btn.btn-management-title.btn-deals-title-responsive {
-    display: block;
-    width: -moz-fit-content;
-    width: fit-content;
-    transform: translateX(22%);
   }
   .caja-blanca-menu-title .caja-blanca-menu-title-homepage-line {
     width: 300px;
@@ -13043,6 +12946,9 @@ textarea.form-control-lg {
   .management-background-image {
     margin-top: 80px;
   }
+  .management-background-image .management-title {
+    text-align: center;
+  }
   .management-our-services-content {
     display: flex;
     flex-direction: column;
@@ -13064,17 +12970,6 @@ textarea.form-control-lg {
   }
   .management-our-services-content .management-our-services-content-images .card .card-image {
     height: auto;
-  }
-  .management-title {
-    margin-top: -68px;
-    margin-left: -117px;
-  }
-  .management-title .management-title-text {
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
-  .management-title .btn.btn-info.btn.btn-management-title-responsive {
-    transform: translateX(50%);
   }
   .management-our-services-content-text-decription-title {
     font-size: 25px;
@@ -13100,47 +12995,13 @@ textarea.form-control-lg {
   .deals-menu .card-deals .card-image-deals {
     height: auto;
   }
-  .last-minute-deals {
-    width: 100%;
-    margin: auto;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-  }
-  .last-minute-deals .last-minute-card-deals {
-    height: auto;
-    width: 90%;
-  }
-  .last-minute-deals .last-minute-deals-row {
-    gap: 50px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .last-minute-deals .last-minute-card-image-deals {
-    height: auto;
-    width: 100%;
-  }
-  .caja-blanca-menu-title.caja-blanca-menu-title-services.last-minute-deals-menu-title {
-    width: 200px;
-  }
   .management-title.deals-image-title {
-    margin-left: -116px;
-    width: 200px;
-    top: 20%;
+    text-align: center;
+    top: 30%;
   }
   .management-title.deals-image-title .deals-title-text {
-    transform: translateX(5%);
     font-size: 30px;
     margin-bottom: 10px;
-  }
-  .management-title.deals-image-title .btn-deals-title {
-    display: none;
-  }
-  .management-title.deals-image-title .btn.btn-info.btn.btn-management-title.btn-deals-title-responsive {
-    display: block;
-    width: -moz-fit-content;
-    width: fit-content;
-    transform: translateX(22%);
   }
   .deals-background-image {
     margin-top: 80px;
@@ -13148,8 +13009,7 @@ textarea.form-control-lg {
   .management-title.deals-image-title {
     margin-top: 50px;
   }
-  .btn.btn-info.btn.btn-management-title.btn-deals-title {
-    width: 125px;
-    transform: translateX(50%);
+  .btn.btn-info.btn-lg.btn-management-title.btn-deals-title, .btn-group-lg > .btn.btn-info.btn-management-title.btn-deals-title {
+    width: 157px;
   }
 }/*# sourceMappingURL=main.css.map */
