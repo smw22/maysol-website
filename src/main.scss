@@ -447,13 +447,13 @@
         margin-bottom: 20px;
         padding: 40px 20px;
     }
-    .first-row-amenities-elements, .second-row-amenities-elements, .third-row-amenities-elements, .fourth-row-amenities-elements{
+    .row-amenities-elements{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
     .amenities-item-image{
         width: 40px;
+        height: 40px;
     }
     .amenities-item-image-special{
         width: 6%;
