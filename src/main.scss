@@ -474,6 +474,8 @@
         width: 30%;
         .image-services{
             width: 100%;
+            height: 275px;
+            object-fit: cover;
         }
     }
     .btn-services{
@@ -657,6 +659,10 @@
         justify-content: center;
         align-items: center;
         transition: 0.3s;
+        height: auto;
+        .deals-image{
+            height: 350px;
+        }
         .image-deals{
             height: 100%;
             width: 100%;
@@ -668,6 +674,7 @@
             box-shadow: 1px 1px 5px #000000;
             padding: 15px;
             border-radius: 0 0 5px 5px;
+            height: 225px;
             .card-title{
                 padding: 5px 0 10px 0;
                 font-family: 'Roboto Slab', serif !important;
@@ -683,30 +690,30 @@
     }
     .deal-chef{
         grid-column-start: 1;
-        grid-column-end: 5;
+        grid-column-end: 6;
         grid-row-start: 1;
         align-self: flex-start;
     }
     .deal-golf{
         grid-column-start: 1;
-        grid-column-end: 5;
+        grid-column-end: 6;
         grid-row-start: 2;
         align-self: flex-start;
     }
     .deal-massage{
-        grid-column-start: 5;
+        grid-column-start: 6;
         grid-column-end: 11;
         grid-row-start: 1;
         align-self: flex-start;
     }
     .deal-yoga{
-        grid-column-start: 5;
-        grid-column-end: 8;
+        grid-column-start: 6;
+        grid-column-end: 11;
         align-self: flex-start;
     }
     .deal-water-activities{
-        grid-column-start: 8;
-        grid-column-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 6;
         align-self: flex-start;
     }
 }
@@ -846,6 +853,11 @@
             }
         }
     }
+}
+
+.contact-links{
+    text-decoration: none;
+    color: #000;
 }
 
 
@@ -1150,6 +1162,9 @@
     
     .deals-background-image{
         margin-top: 100px;
+    }
+    .deals-menu .deals .deals-text{
+        height: auto;
     }
 
 }

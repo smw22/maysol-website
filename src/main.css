@@ -12381,6 +12381,9 @@ textarea.form-control-lg {
 }
 .service-item .service-image-item .image-services {
   width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .service-item .btn-services {
   font-weight: 500;
@@ -12509,6 +12512,10 @@ textarea.form-control-lg {
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+  height: auto;
+}
+.deals-menu .deals .deals-image {
+  height: 350px;
 }
 .deals-menu .deals .image-deals {
   height: 100%;
@@ -12522,6 +12529,7 @@ textarea.form-control-lg {
   box-shadow: 1px 1px 5px #000000;
   padding: 15px;
   border-radius: 0 0 5px 5px;
+  height: 225px;
 }
 .deals-menu .deals .deals-text .card-title {
   padding: 5px 0 10px 0;
@@ -12536,30 +12544,30 @@ textarea.form-control-lg {
 }
 .deals-menu .deal-chef {
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 6;
   grid-row-start: 1;
   align-self: flex-start;
 }
 .deals-menu .deal-golf {
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 6;
   grid-row-start: 2;
   align-self: flex-start;
 }
 .deals-menu .deal-massage {
-  grid-column-start: 5;
+  grid-column-start: 6;
   grid-column-end: 11;
   grid-row-start: 1;
   align-self: flex-start;
 }
 .deals-menu .deal-yoga {
-  grid-column-start: 5;
-  grid-column-end: 8;
+  grid-column-start: 6;
+  grid-column-end: 11;
   align-self: flex-start;
 }
 .deals-menu .deal-water-activities {
-  grid-column-start: 8;
-  grid-column-end: 11;
+  grid-column-start: 1;
+  grid-column-end: 6;
   align-self: flex-start;
 }
 
@@ -12658,6 +12666,11 @@ textarea.form-control-lg {
 }
 .contact-information .contact-item .contact-text .contact-text-title {
   font-family: "Roboto Slab", serif !important;
+}
+
+.contact-links {
+  text-decoration: none;
+  color: #000;
 }
 
 @media all and (max-width: 1700px) {
@@ -12885,6 +12898,9 @@ textarea.form-control-lg {
   }
   .deals-background-image {
     margin-top: 100px;
+  }
+  .deals-menu .deals .deals-text {
+    height: auto;
   }
 }
 @media all and (max-width: 775px) {
